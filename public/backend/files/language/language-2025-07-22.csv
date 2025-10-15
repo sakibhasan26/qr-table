@@ -1,0 +1,446 @@
+Key,en,es,ar,bn,tr
+Dashboard,Dashboard,Panel,لوحة التحكم,ড্যাশবোর্ড,Gösterge Paneli
+Language,Language,Idioma,اللغة,ভাষা,Dil
+Information,Information,Información,معلومات,তথ্য,Bilgi
+Language Information,Language Information,Información de idioma,معلومات اللغة,ভাষা তথ্য,Dil Bilgileri
+Language Manager,Language Manager,Administrador de idiomas,مدير اللغة,ভাষা ব্যবস্থাপক,Dil Yöneticisi
+Language created successfully!,Language created successfully!,¡Idioma creado con éxito!,تم إنشاء اللغة بنجاح!,ভাষা সফলভাবে তৈরি!,Dil başarıyla oluşturuldu!
+Home,Home,Hogar,الصفحة الرئيسية,বাড়ি,Ev
+Basic settings fetch successfully!,Basic settings fetch successfully!,¡La configuración básica se obtiene correctamente!,تم استرداد إعدادات أساسية بنجاح!,মৌলিক সেটিংস সফলভাবে আনা!,Temel ayarlar başarıyla alındı!
+Access denied! Unauthenticated,Access denied! Unauthenticated,¡Acceso denegado! no autenticado,تم رفض الوصول! غير مُصادق عليه,প্রবেশাধিকার অস্বীকার! অপ্রমাণিত,Erişim engellendi! Kimliği doğrulanmadı
+Something went wrong! Please try again,Something went wrong! Please try again,¡Algo salió mal! Inténtalo de nuevo,حدث خطأ ما! يرجى المحاولة مرة أخرى,কিছু ভুল হয়েছে! আবার চেষ্টা করুন,Bir sorun oluştu! Lütfen tekrar deneyin.
+Verification code sended successfully to your mail. Please check your mail inbox/spam to verify,Verification code sended successfully to your mail. Please check your mail inbox/spam to verify,Código de verificación enviado con éxito a su correo. Por favor revise su bandeja de entrada de correo/correo no deseado para verificar,تم إرسال رمز التحقق بنجاح إلى بريدك الإلكتروني. يرجى التحقق من البريد الوارد أو البريد العشوائي للتحقق,আপনার মেইলে যাচাইকরণ কোড সফলভাবে পাঠানো হয়েছে। যাচাই করতে আপনার মেইল ইনবক্স/স্প্যাম চেক করুন,Doğrulama kodu e-postanıza başarıyla gönderildi. Lütfen doğrulamak için e-posta gelen kutunuzu/spam kutunuzu kontrol edin.
+Successfully resend verification code!,Verification code resend successfully!,Código de verificación reenviado con éxito!,تم إعادة إرسال رمز التحقق بنجاح!,যাচাইকরণ কোড সফলভাবে পুনরায় পাঠানো হয়েছে!,Doğrulama kodu başarıyla tekrar gönderildi!
+Invalid OTP. Please try again,Invalid OTP. Please try again,OTP no válido. Inténtalo de nuevo,رمز التحقق غير صالح. يرجى المحاولة مرة أخرى,অবৈধ OTP আবার চেষ্টা করুন,Geçersiz OTP. Lütfen tekrar deneyin.
+Session expired. Please try again,Session expired. Please try again,Sesión expirada. Inténtalo de nuevo,انتهت الجلسة. يرجى المحاولة مرة أخرى,সেশনের মেয়াদ শেষ। আবার চেষ্টা করুন,Oturum süresi doldu. Lütfen tekrar deneyin.
+Account successfully verified,Account successfully verified,Cuenta verificada con éxito,تم التحقق من الحساب بنجاح,অ্যাকাউন্ট সফলভাবে যাচাই করা হয়েছে,Hesap başarıyla doğrulandı
+You are already KYC Verified User,You are already KYC Verified User,Ya eres usuario verificado de KYC,أنت بالفعل مستخدم تم التحقق منه من KYC,আপনি ইতিমধ্যেই কেওয়াইসি যাচাইকৃত ব্যবহারকারী,Zaten KYC Doğrulanmış Kullanıcısınız
+Your KYC information is submitted. Please wait for admin confirmation,Your KYC information is submitted. Please wait for admin confirmation,Su información KYC ha sido enviada. Espere la confirmación del administrador,تم إرسال معلومات KYC الخاصة بك. يرجى الانتظار لتأكيد المسؤول,আপনার কেওয়াইসি তথ্য জমা দেওয়া হয়েছে। অ্যাডমিন নিশ্চিতকরণের জন্য অপেক্ষা করুন,KYC bilgileriniz gönderildi. Lütfen yönetici onayını bekleyin.
+User KYC section is under maintenance,User KYC section is under maintenance,La sección KYC del usuario está en mantenimiento,قسم KYC للمستخدم قيد الصيانة,ব্যবহারকারীর কেওয়াইসি বিভাগ রক্ষণাবেক্ষণের অধীনে রয়েছে,Kullanıcı KYC bölümü bakımdadır
+User KYC input fields fetch successfully!,User KYC input fields fetch successfully!,¡Los campos de entrada KYC del usuario se obtienen con éxito!,تم استرداد حقول إدخال KYC للمستخدم بنجاح!,ব্যবহারকারীর KYC ইনপুট ক্ষেত্র সফলভাবে আনা!,Kullanıcı KYC giriş alanları başarıyla getirildi!
+KYC information successfully submitted,KYC information successfully submitted,Información KYC enviada con éxito,تم إرسال معلومات KYC بنجاح,KYC তথ্য সফলভাবে জমা দেওয়া হয়েছে,KYC bilgileri başarıyla gönderildi
+Your account secure with google 2FA,Your account secure with google 2FA,Tu cuenta segura con google 2FA,حسابك آمن باستخدام Google 2FA,Google 2FA এর মাধ্যমে আপনার অ্যাকাউন্ট সুরক্ষিত,Hesabınız Google 2FA ile güvende
+To enable two factor authentication (powered by google) please visit your web dashboard Click here:,To enable two factor authentication (powered by google) please visit your web dashboard Click here:,"Para habilitar la autenticación de dos factores (con la tecnología de Google), visite su panel web Haga clic aquí:",لتمكين المصادقة الثنائية (مدعومة من Google) يرجى زيارة لوحة التحكم الخاصة بك على الويب انقر هنا:,দুই ফ্যাক্টর প্রমাণীকরণ সক্ষম করতে (গুগল দ্বারা চালিত) অনুগ্রহ করে আপনার ওয়েব ড্যাশবোর্ডে যান এখানে ক্লিক করুন:,İki faktörlü kimlik doğrulamayı etkinleştirmek için (Google tarafından desteklenmektedir) lütfen web panelinizi ziyaret edin Buraya tıklayın:
+Request response fetch successfully!,Request response fetch successfully!,Solicitud de respuesta obtenida con éxito.,تم استرداد استجابة الطلب بنجاح!,অনুরোধ প্রতিক্রিয়া সফলভাবে আনা!,İstek yanıtı başarıyla alındı!
+Your secret key not stored properly. Please contact with system administrator,Your secret key not stored properly. Please contact with system administrator,"Tu clave secreta no se almacenó correctamente. Por favor, contacta con el administrador del sistema.",مفتاحك السري غير مخزن بشكل صحيح. يرجى الاتصال بمسؤول النظام,আপনার গোপন কী সঠিকভাবে সংরক্ষণ করা হয় না. সিস্টেম অ্যাডমিনিস্ট্রেটরের সাথে যোগাযোগ করুন,Gizli anahtarınız doğru şekilde saklanmadı. Lütfen sistem yöneticinizle iletişime geçin.
+Google 2FA successfully verified!,Google 2FA successfully verified!,¡Verificación de Google 2FA realizada con éxito!,تم التحقق من Google 2FA بنجاح!,Google 2FA সফলভাবে যাচাই করা হয়েছে!,Google 2FA başarıyla doğrulandı!
+Invalid authentication code,Invalid authentication code,Código de autenticación no válido.,رمز التحقق غير صالح,অবৈধ প্রমাণীকরণ কোড,Geçersiz kimlik doğrulama kodu
+Failed to login. Please try again,Failed to login. Please try again,"Inicio de sesión fallido. Por favor, inténtalo de nuevo.",فشل تسجيل الدخول. يرجى المحاولة مرة أخرى,লগইন করতে ব্যর্থ হয়েছে. আবার চেষ্টা করুন,Giriş yapılamadı. Lütfen tekrar deneyin.
+User doesn't exists,User doesn't exists,El usuario no existe.,المستخدم غير موجود,ব্যবহারকারীর অস্তিত্ব নেই,Kullanıcı mevcut değil
+Your account is temporary banded. Please contact with system admin,Your account is temporary banded. Please contact with system admin,"Tu cuenta está temporalmente bloqueada. Por favor, contacta con el administrador del sistema.",حسابك موقوف مؤقتًا. يرجى الاتصال بمسؤول النظام,আপনার অ্যাকাউন্ট অস্থায়ী ব্যান্ড করা হয়. সিস্টেম অ্যাডমিনের সাথে যোগাযোগ করুন,Hesabınız geçici olarak kapatıldı. Lütfen sistem yöneticisiyle iletişime geçin.
+Code sended to your email address!,Verification code sended to your email address,Código de verificación enviado a tu dirección de correo electrónico.,تم إرسال الرمز إلى عنوان بريدك الإلكتروني!,আপনার ইমেল ঠিকানায় যাচাইকরণ কোড পাঠানো হয়েছে,Doğrulama kodu e-posta adresinize gönderildi
+Session expired. Please try again,Session expired. Please try again,"La sesión ha expirado. Por favor, inténtalo de nuevo.",انتهت الجلسة. يرجى المحاولة مرة أخرى,সেশনের মেয়াদ শেষ। আবার চেষ্টা করুন,Oturum süresi doldu. Lütfen tekrar deneyin.
+Verification Otp is Invalid,Verification Otp is Invalid,Código de verificación no válido.,رمز التحقق غير صالح,যাচাইকরণ ওটিপি অবৈধ৷,Doğrulama Otp Geçersiz
+OTP successfully verified!,OTP successfully verified!,¡Código OTP verificado con éxito!,تم التحقق من OTP بنجاح!,OTP সফলভাবে যাচাই করা হয়েছে!,OTP başarıyla doğrulandı!
+Request token is invalid,Request token is invalid,El token de solicitud no es válido.,رمز الطلب غير صالح,অনুরোধ টোকেন অবৈধ,İstek belirteci geçersiz
+OTP resend success,OTP resend success,Reenvío exitoso del OTP.,إعادة إرسال OTP ناجحة,OTP আবার পাঠানো সফল,OTP yeniden gönderme başarılı
+Password reset success,Password reset success,Restablecimiento de contraseña exitoso.,إعادة تعيين كلمة المرور ناجحة,পাসওয়ার্ড রিসেট সফল,Şifre sıfırlama başarılı
+Credentials didn't match,Credentials didn't match,Las credenciales no coinciden.,بيانات الاعتماد غير متطابقة,শংসাপত্র মেলেনি,Kimlik bilgileri eşleşmedi
+Login Failed! Failed to refresh wallet! Please try again,Login Failed! Failed to refresh wallet! Please try again,"¡Inicio de sesión fallido! Error al actualizar la billetera. Por favor, inténtalo de nuevo.",فشل تسجيل الدخول! فشل في تحديث المحفظة! يرجى المحاولة مرة أخرى,লগইন ব্যর্থ হয়েছে! ওয়ালেট রিফ্রেশ করতে ব্যর্থ! আবার চেষ্টা করুন,Giriş Başarısız! Cüzdan yenilenemedi! Lütfen tekrar deneyin.
+logged in,User successfully logged in,Usuario inició sesión con éxito.,تم تسجيل الدخول,ব্যবহারকারী সফলভাবে লগ ইন করেছেন৷,Kullanıcı başarıyla oturum açtı
+Registration failed! Please try again,Registration failed! Please try again,"Registro fallido. Por favor, inténtalo de nuevo.",فشل التسجيل! يرجى المحاولة مرة أخرى,নিবন্ধন ব্যর্থ! আবার চেষ্টা করুন,Kayıt başarısız oldu! Lütfen tekrar deneyin.
+Failed to fetch user information. Please try again,Failed to fetch user information. Please try again,"Error al obtener la información del usuario. Por favor, inténtalo de nuevo.",فشل في استرداد معلومات المستخدم. يرجى المحاولة مرة أخرى,ব্যবহারকারীর তথ্য আনতে ব্যর্থ হয়েছে৷ আবার চেষ্টা করুন,Kullanıcı bilgileri alınamadı. Lütfen tekrar deneyin.
+Failed to generate user token! Please try again,Failed to generate user token! Please try again,"Error al generar el token de usuario. Por favor, inténtalo de nuevo.",فشل في إنشاء رمز المستخدم! يرجى المحاولة مرة أخرى,ব্যবহারকারী টোকেন তৈরি করতে ব্যর্থ! আবার চেষ্টা করুন,Kullanıcı belirteci oluşturulamadı! Lütfen tekrar deneyin.
+Failed to create wallet! Please try again,Registration Failed! Failed to create wallet! Please try again,"Registro fallido. Error al crear la billetera. Por favor, inténtalo de nuevo.",فشل في إنشاء المحفظة! يرجى المحاولة مرة أخرى,নিবন্ধন ব্যর্থ! ওয়ালেট তৈরি করতে ব্যর্থ! আবার চেষ্টা করুন,Kayıt başarısız! Cüzdan oluşturulamadı! Lütfen tekrar deneyin.
+User successfully registered,User successfully registered,Usuario registrado con éxito.,تم تسجيل المستخدم بنجاح,ব্যবহারকারী সফলভাবে নিবন্ধিত হয়েছে,Kullanıcı başarıyla kaydedildi
+Failed to fetch data. Please try again,Failed to fetch data. Please try again,"Error al obtener los datos. Por favor, inténtalo de nuevo.",فشل في استرداد البيانات. يرجى المحاولة مرة أخرى,ডেটা আনতে ব্যর্থ হয়েছে৷ আবার চেষ্টা করুন,Veriler alınamadı. Lütfen tekrar deneyin.
+Payment gateway fetch successfully!,Payment gateway fetch successfully!,¡Obtención exitosa de la pasarela de pago!,تم استرداد بوابة الدفع بنجاح!,পেমেন্ট গেটওয়ে সফলভাবে আনা!,Ödeme ağ geçidi başarıyla alındı!
+Can't submit manual gateway in automatic link,Can't submit manual gateway in automatic link,No se puede enviar una pasarela manual en un enlace automático.,لا يمكن إرسال بوابة يدوية في رابط تلقائي,স্বয়ংক্রিয় লিঙ্কে ম্যানুয়াল গেটওয়ে জমা দেওয়া যাবে না,Otomatik bağlantıda manuel ağ geçidi gönderilemiyor
+Record didn't saved properly. Please try again,Transaction failed. Record didn't saved properly. Please try again,"La transacción falló. El registro no se guardó correctamente. Por favor, inténtalo de nuevo.",لم يتم حفظ السجل بشكل صحيح. يرجى المحاولة مرة أخرى,লেনদেন ব্যর্থ হয়েছে৷ রেকর্ড সঠিকভাবে সংরক্ষণ করা হয়নি. আবার চেষ্টা করুন,İşlem başarısız oldu. Kayıt düzgün kaydedilmedi. Lütfen tekrar deneyin.
+Payment process cancel successfully!,Payment process cancel successfully!,Proceso de pago cancelado con éxito.,تم إلغاء عملية الدفع بنجاح!,পেমেন্ট প্রক্রিয়া সফলভাবে বাতিল!,Ödeme işlemi başarıyla iptal edildi!
+Can't get fields. Requested gateway is automatic,Can't get fields. Requested gateway is automatic,No se pueden obtener los campos. La pasarela solicitada es automática.,لا يمكن الحصول على الحقول. البوابة المطلوبة هي تلقائية,ক্ষেত্র পাওয়া যাচ্ছে না। অনুরোধ করা গেটওয়ে স্বয়ংক্রিয়,Alanlara ulaşılamıyor. İstenen ağ geçidi otomatiktir.
+This payment gateway is under constructions. Please try with another payment gateway,This payment gateway is under constructions. Please try with another payment gateway,"Esta pasarela de pago está en construcción. Por favor, inténtalo con otra pasarela de pago.",هذه البوابة الدفع تحت الإنشاء. يرجى المحاولة باستخدام بوابة دفع أخرى,এই পেমেন্ট গেটওয়ে নির্মাণাধীন আছে. অন্য পেমেন্ট গেটওয়ে দিয়ে চেষ্টা করুন,Bu ödeme ağ geçidi yapım aşamasındadır. Lütfen başka bir ödeme ağ geçidiyle deneyin.
+Payment gateway input fields fetch successfully!,Payment gateway input fields fetch successfully!,¡Campo de entrada de la pasarela de pago obtenido con éxito!,تم استرجاع حقول إدخال بوابة الدفع بنجاح!,পেমেন্ট গেটওয়ে ইনপুট ক্ষেত্র সফলভাবে আনা!,Ödeme ağ geçidi giriş alanları başarıyla getirildi!
+Can't submit automatic gateway in manual link,Can't submit automatic gateway in manual link,No se puede enviar una pasarela automática en un enlace manual.,لا يمكن تقديم بوابة الدفع التلقائية في الرابط اليدوي,ম্যানুয়াল লিঙ্কে স্বয়ংক্রিয় গেটওয়ে জমা দেওয়া যাবে না,Manuel bağlantıda otomatik ağ geçidi gönderilemiyor
+Selected gateway is invalid,Selected gateway is invalid,La pasarela seleccionada no es válida.,البوابة المحددة غير صالحة,নির্বাচিত গেটওয়ে অবৈধ৷,Seçilen ağ geçidi geçersiz
+Failed to save information. Please try again,Transaction Failed. Failed to save information. Please try again,"Transacción fallida. Error al guardar la información. Por favor, inténtalo de nuevo.",فشل في حفظ المعلومات. يرجى المحاولة مرة أخرى,লেনদেন ব্যর্থ হয়েছে৷ তথ্য সংরক্ষণ করতে ব্যর্থ হয়েছে. আবার চেষ্টা করুন,İşlem Başarısız. Bilgiler kaydedilemedi. Lütfen tekrar deneyin.
+Your wallet is invalid!,Your wallet is invalid!,Tu billetera no es válida.,محفظتك غير صالحة!,আপনার ওয়ালেট অবৈধ!,Cüzdanınız geçersiz!
+Transaction Success. Please wait for admin confirmation,Transaction Success. Please wait for admin confirmation,"Transacción exitosa. Por favor, espera la confirmación del administrador.",نجاح العملية. يرجى الانتظار لتأكيد المسؤول,লেনদেন সাফল্য. অ্যাডমিন নিশ্চিতকরণের জন্য অপেক্ষা করুন,İşlem Başarılı. Lütfen yönetici onayını bekleyin.
+Request response fetch successfully!,Request response fetch successfully!,Solicitud de respuesta obtenida con éxito.,تم استرجاع استجابة الطلب بنجاح!,অনুরোধ প্রতিক্রিয়া সফলভাবে আনা!,İstek yanıtı başarıyla alındı!
+Payment gateway response successful,Payment gateway response successful,Respuesta de la pasarela de pago exitosa.,نجاح استجابة بوابة الدفع,পেমেন্ট গেটওয়ে প্রতিক্রিয়া সফল,Ödeme ağ geçidi yanıtı başarılı
+User dashboard data fetch successfully!,User dashboard data fetch successfully!,Obtención exitosa de los datos del panel de usuario.,تم استرجاع بيانات لوحة المستخدم بنجاح!,ব্যবহারকারী ড্যাশবোর্ড ডেটা সফলভাবে আনা!,Kullanıcı panosu verileri başarıyla alındı!
+Investment plan list fetch successfully!,Investment plan list fetch successfully!,Obtención exitosa de la lista de planes de inversión.,تم استرجاع قائمة خطط الاستثمار بنجاح!,বিনিয়োগ পরিকল্পনা তালিকা সফলভাবে আনা!,Yatırım planı listesi başarıyla getirildi!
+Oops! This plan is no longer available,Oops! This plan is no longer available,¡Oops! Este plan ya no está disponible.,عذرًا! هذه الخطة لم تعد متاحة,উফ! এই পরিকল্পনা আর উপলব্ধ নেই,Hay aksi! Bu plan artık mevcut değil
+Oops! Wallet not found!,Oops! Wallet not found!,¡Oops! Billetera no encontrada.,عذرًا! لم يتم العثور على المحفظة!,উফ! মানিব্যাগ পাওয়া যায়নি!,Oops! Cüzdan bulunamadı!
+Your wallet balance is insufficient,Your wallet balance is insufficient,El saldo de tu billetera es insuficiente.,رصيد محفظتك غير كافٍ,আপনার ওয়ালেট ব্যালেন্স অপর্যাপ্ত,Cüzdan bakiyeniz yetersiz
+Oops! Something went wrong! Please try again,Oops! Something went wrong! Please try again,"¡Oops! Algo salió mal. Por favor, inténtalo de nuevo.",عذرًا! حدث خطأ! يرجى المحاولة مرة أخرى,উফ! কিছু ভুল হয়েছে! আবার চেষ্টা করুন,Hay aksi! Bir sorun oluştu! Lütfen tekrar deneyin.
+New Investment Plan Purchase Successfully!,New Investment Plan Purchase Successfully!,¡Nueva compra exitosa del plan de inversión!,تم شراء خطة الاستثمار الجديدة بنجاح!,নতুন বিনিয়োগ পরিকল্পনা সফলভাবে ক্রয়!,Yeni Yatırım Planı Satın Alma İşlemi Başarıyla Gerçekleştirildi!
+Investment data fetch successfully!,Investment data fetch successfully!,Obtención exitosa de los datos de inversión.,تم استرجاع بيانات الاستثمار بنجاح!,বিনিয়োগ তথ্য সফলভাবে আনা!,Yatırım verileri başarıyla alındı!
+Investment profit data fetch successfully!,Investment profit data fetch successfully!,Obtención exitosa de los datos de ganancias de inversión.,تم استرجاع بيانات الربح من الاستثمار بنجاح!,বিনিয়োগের লাভের ডেটা সফলভাবে আনা!,Yatırım karı verileri başarıyla alındı!
+User wallets fetch successfully!,User wallets fetch successfully!,Obtención exitosa de las billeteras del usuario.,تم استرجاع بيانات محافظ المستخدم بنجاح!,ব্যবহারকারীর ওয়ালেট সফলভাবে আনা!,Kullanıcı cüzdanları başarıyla alındı!
+Receiver doesn't exists or Receiver is temporary banned,Receiver doesn't exists or Receiver is temporary banned,El receptor no existe o el receptor está temporalmente bloqueado.,المستلم غير موجود أو المستلم محظور مؤقتًا,রিসিভার নেই বা রিসিভার সাময়িকভাবে নিষিদ্ধ,Alıcı mevcut değil veya Alıcı geçici olarak yasaklandı
+Receiver wallet not available,Receiver wallet not available,Billetera del receptor no disponible.,المحفظة الخاصة بالمستلم غير متاحة,রিসিভার ওয়ালেট উপলব্ধ নেই,Alıcı cüzdanı mevcut değil
+Your wallet balance is insufficient,Your wallet balance is insufficient,El saldo de tu billetera es insuficiente.,رصيد محفظتك غير كافٍ,আপনার ওয়ালেট ব্যালেন্স অপর্যাপ্ত,Cüzdan bakiyeniz yetersiz
+Transaction failed! Something went wrong! Please try again,Transaction failed! Something went wrong! Please try again,"¡La transacción falló! Algo salió mal. Por favor, inténtalo de nuevo.",فشلت العملية! حدث خطأ! يرجى المحاولة مرة أخرى,লেনদেন ব্যর্থ হয়েছে! কিছু ভুল হয়েছে! আবার চেষ্টা করুন,İşlem başarısız oldu! Bir sorun oluştu! Lütfen tekrar deneyin.
+Profile info fetch successfully!,Profile info fetch successfully!,Obtención exitosa de la información del perfil.,تم استرجاع معلومات الملف الشخصي بنجاح!,প্রোফাইল তথ্য সফলভাবে আনা!,Profil bilgisi başarıyla alındı!
+Phone number already exists,Phone number already exists,El número de teléfono ya existe.,رقم الهاتف موجود بالفعل,ফোন নম্বর আগে থেকেই আছে,Telefon numarası zaten mevcut
+Profile successfully updated!,Profile successfully updated!,¡Perfil actualizado con éxito!,تم تحديث الملف الشخصي بنجاح!,প্রোফাইল সফলভাবে আপডেট হয়েছে!,Profil başarıyla güncellendi!
+Current password didn't match,Current password didn't match,La contraseña actual no coincide.,كلمة المرور الحالية غير متطابقة,বর্তমান পাসওয়ার্ড মেলেনি,Mevcut şifre eşleşmiyor
+Password successfully updated!,Password successfully updated!,¡Contraseña actualizada con éxito!,تم تحديث كلمة المرور بنجاح!,পাসওয়ার্ড সফলভাবে আপডেট হয়েছে!,Şifre başarıyla güncellendi!
+Logout success!,Logout success!,¡Cierre de sesión exitoso!,تم تسجيل الخروج بنجاح!,লগআউট সাফল্য!,Çıkış başarılı!
+Splash screen data fetch successfully!,Splash screen data fetch successfully!,Obtención exitosa de los datos de la pantalla de presentación.,تم استرجاع بيانات شاشة البداية بنجاح!,স্প্ল্যাশ স্ক্রীন ডেটা সফলভাবে আনা!,Açılış ekranı verileri başarıyla alındı!
+Onboard screen data fetch successfully!,Onboard screen data fetch successfully!,Obtención exitosa de los datos de la pantalla de inicio.,تم استرجاع بيانات شاشة التوجيه بنجاح!,অনবোর্ড স্ক্রীন ডেটা সফলভাবে আনা!,Onboard ekran verileri başarıyla alındı!
+Transactions fetch successfully!,Transactions fetch successfully!,Obtención exitosa de las transacciones.,تم استرجاع بيانات المعاملات بنجاح!,লেনদেন সফলভাবে আনা!,İşlemler başarıyla alındı!
+Request data fetch successfully!,Request data fetch successfully!,Obtención exitosa de los datos de solicitud.,تم استرجاع بيانات الطلب بنجاح!,সফলভাবে ডেটা আনার অনুরোধ করুন!,Veri alma isteği başarıyla gerçekleştirildi!
+Payment gateway not found!,Payment gateway not found!,Pasarela de pago no encontrada.,البوابة الدفع غير موجودة!,পেমেন্ট গেটওয়ে পাওয়া যায়নি!,Ödeme ağ geçidi bulunamadı!
+gateway is under maintenance. Please try with another gateway,Payment gateway is under maintenance. Please try with another gateway,"La pasarela de pago está en mantenimiento. Por favor, inténtalo con otra pasarela.",البوابة قيد الصيانة. يرجى المحاولة باستخدام بوابة أخرى.,পেমেন্ট গেটওয়ে রক্ষণাবেক্ষণ অধীনে আছে. অন্য গেটওয়ে দিয়ে চেষ্টা করুন,Ödeme ağ geçidi bakımda. Lütfen başka bir ağ geçidi deneyin.
+gateway input field fetch successfully!,Payment gateway input field fetch successfully!,¡Campo de entrada de la pasarela de pago obtenido con éxito!,تم استرجاع حقول إدخال بوابة الدفع بنجاح!,পেমেন্ট গেটওয়ে ইনপুট ক্ষেত্র সফলভাবে আনা!,Ödeme ağ geçidi giriş alanı başarıyla getirildi!
+Service not available!,Service not available!,Servicio no disponible.,الخدمة غير متاحة!,সেবা পাওয়া যাচ্ছে না!,Hizmet mevcut değil!
+Gateway isn't available for this transaction,Gateway isn't available for this transaction,La pasarela no está disponible para esta transacción.,البوابة غير متاحة لهذه العملية.,এই লেনদেনের জন্য গেটওয়ে উপলব্ধ নয়৷,Bu işlem için ağ geçidi mevcut değil
+Your wallet balance is insufficient,Your wallet balance is insufficient,El saldo de tu billetera es insuficiente.,رصيد محفظتك غير كافٍ.,আপনার ওয়ালেট ব্যালেন্স অপর্যাপ্ত,Cüzdan bakiyeniz yetersiz
+Oops! Wallet type not defined,Oops! Wallet type not defined,¡Oops! Tipo de billetera no definido.,عذرًا! نوع المحفظة غير محدد.,উফ! ওয়ালেটের ধরন সংজ্ঞায়িত করা হয়নি,Oops! Cüzdan türü tanımlanmadı
+Something went wrong! Please try again,Something went wrong! Please try again,"Algo salió mal. Por favor, inténtalo de nuevo.",حدث خطأ! يرجى المحاولة مرة أخرى.,কিছু ভুল হয়েছে! আবার চেষ্টা করুন,Bir sorun oluştu! Lütfen tekrar deneyin.
+Language data fetch successfully!,Language data fetch successfully!,¡Los datos de idioma se obtuvieron correctamente!,تم استرجاع بيانات اللغة بنجاح!,ভাষা ডেটা সফলভাবে আনা!,Dil verisi başarıyla alındı!
+Hello Brother,WOW ,WOW ,مرحبًا أخي.,বাহ ,VAY 
+app Name,App Name,Nombre de la Aplicación,اسم التطبيق.,অ্যাপের নাম,Uygulama Adı
+please Fill Out The Field,Please Fill Out The Field,"Por favor, completa el campo",يرجى ملء الحقل.,ক্ষেত্র পূরণ করুন,Lütfen Alanı Doldurun
+please ConnectInternet,PLEASE CONNECT TO THE INTERNET,"POR FAVOR, CONÉCTATE A INTERNET",يرجى الاتصال بالإنترنت.,অনুগ্রহ করে ইন্টারনেটের সাথে সংযোগ করুন,LÜTFEN İNTERNETE BAĞLANIN
+sign In,Sign In,Iniciar Sesión,تسجيل الدخول.,সাইন ইন করুন,Giriş Yap
+sign Up,Sign Up,Registrarse,التسجيل.,সাইন আপ করুন,Üye olmak
+password,Password,Contraseña,كلمة المرور.,পাসওয়ার্ড,Şifre
+old Password,Old Password,Contraseña Antigua,كلمة المرور القديمة.,পুরানো পাসওয়ার্ড,eski Şifre
+enter Password,Enter Password,Introduce la Contraseña,أدخل كلمة المرور.,পাসওয়ার্ড লিখুন,Şifreyi Girin
+forget Password,Forget Password,Olvidé mi Contraseña,نسيت كلمة المرور.,পাসওয়ার্ড ভুলে যান,Şifremi Unuttum
+get Started,Get Started,Empezar,ابدأ الآن.,শুরু করুন,Başlayın
+email Address,Email Address,Dirección de Correo Electrónico,عنوان البريد الإلكتروني.,ইমেইল ঠিকানা,E-posta Adresi
+enter Email Address,Enter Email Address,Introduce la Dirección de Correo Electrónico,أدخل عنوان البريد الإلكتروني.,ইমেল ঠিকানা লিখুন,E-posta Adresini Girin
+enter The OTP CodeSendTo,Enter The OTP Code Sent to,Introduce el Código OTP Enviado a,أدخل رمز OTP المُرسَل إلى.,প্রেরিত OTP কোড লিখুন,Gönderilen OTP Kodunu Girin
+verified Code,Verified Code,Código Verificado,الرمز المتحقق.,যাচাইকৃত কোড,Doğrulanmış Kod
+submit,Submit,Enviar,إرسال.,জমা দিন,Göndermek
+oTP Verification,OTP Verification,Verificación OTP,التحقق من رمز OTP.,OTP যাচাইকরণ,OTP Doğrulaması
+two Fa Verification,Two Fa OTP Verification,Verificación de Dos Factores OTP,التحقق بخطوتين,দুই ফা ওটিপি যাচাইকরণ,İki Fa OTP Doğrulaması
+email Verification,Email Verification,Verificación de Correo Electrónico,التحقق من البريد الإلكتروني,ইমেল যাচাইকরণ,E-posta Doğrulaması
+resend,Resend Code,Reenviar Código,إعادة الإرسال,কোড পুনরায় পাঠান,Kodu Yeniden Gönder
+new Password,New Password,Nueva Contraseña,كلمة المرور الجديدة,নতুন পাসওয়ার্ড,Yeni Şifre
+confirm Password,Confirm Password,Confirmar Contraseña,تأكيد كلمة المرور,পাসওয়ার্ড নিশ্চিত করুন,Şifreyi Onayla
+enter,Enter,Entrar,أدخل,প্রবেশ করুন,Girmek
+reset Password,Reset Password,Restablecer Contraseña,إعادة تعيين كلمة المرور,পাসওয়ার্ড রিসেট করুন,Şifreyi Sıfırla
+congratulation,Congratulations!!,¡Felicidades!,تهانينا,অভিনন্দন!!,Tebrikler!!
+create Account,Create Account,Crear Cuenta,إنشاء حساب,অ্যাকাউন্ট তৈরি করুন,Hesap oluşturmak
+first Name,First Name,Nombre,الاسم الأول,প্রথম নাম,İlk adı
+last Name,Last Name,Apellido,الاسم الأخير,পদবি,Soy isim
+okay,Okay,Aceptar,موافق,ঠিক আছে,Tamam
+transfer,TRANSFER,TRANSFERIR,نقل,ট্রান্সফার,TRANSFER
+home Upper,HOME,INICIO,الصفحة الرئيسية,হোম,EV
+profile,Profile,Perfil,الملف الشخصي,প্রোফাইল,Profil
+exchange,Exchange,Intercambio,التبادل,বিনিময়,Değişme
+request,Request,Solicitar,الطلب,অনুরোধ,Rica etmek
+recent Transaction,Recent Transaction,Transacción Reciente,المعاملات الأخيرة,সাম্প্রতিক লেনদেন,Son İşlem
+myInvoice,My Invoice,Mi Factura,فاتورتي,আমার চালান,Faturam
+my Voucher,My Voucher,Mi Vale,القسائم الخاصة بي,আমার ভাউচার,Kuponum
+transaction Log,Transaction Log,Registro de Transacciones,سجل المعاملات,লেনদেন লগ,İşlem Günlüğü
+two FA Security,2FA Security,Seguridad 2FA,أمان بخطوتين,2FA নিরাপত্তা,2FA Güvenliği
+changePassword,Change Password,Cambiar Contraseña,تغيير كلمة المرور,পাসওয়ার্ড পরিবর্তন করুন,Şifre değiştir
+help Center,Help Center,Centro de Ayuda,مركز المساعدة,সহায়তা কেন্দ্র,Yardım Merkezi
+privacy AndPolicy,Privacy & Policy,Privacidad y Política,الخصوصية والسياسة,গোপনীয়তা এবং নীতি,Gizlilik ve Politika
+aboutUs,About Us,Acerca de Nosotros,حولنا,আমাদের সম্পর্কে,Hakkımızda
+signOut,Sign Out,Cerrar Sesión,تسجيل الخروج,সাইন আউট,Oturumu Kapat
+amount,Amount,Cantidad,المبلغ,পরিমাণ,Miktar
+preview Screen,Preview Screen,Pantalla de Vista Previa,شاشة المعاينة,প্রিভিউ স্ক্রীন,Önizleme Ekranı
+preview,Preview,Vista Previa,معاينة,পূর্বরূপ,Önizleme
+exchange Rate,Exchange Rate,Tipo de Cambio,سعر الصرف,বিনিময় হার,Döviz kuru
+total Fees And Charges,Total Fees & Charges,Cargos y Tarifas Totales,إجمالي الرسوم والتكاليف,মোট ফি এবং চার্জ,Toplam Ücretler ve Masraflar
+will Get,Will Get,Recibiré,سوف تحصل,পাবেন,Alacak
+total Payable Amount,Total Payable Ammount,Cantidad Total a Pagar,المبلغ الإجمالي المستحق,মোট প্রদেয় পরিমাণ,Toplam Ödenecek Tutar
+confirm,Confirm,Confirmar,تأكيد,নিশ্চিত করুন,Onaylamak
+money Exchange,Money Exchange,Cambio de Dinero,تبادل الأموال,মানি এক্সচেঞ্জ,Döviz Bürosu
+from,From,Desde,من,থেকে,İtibaren
+from Slash,From/,Desde/,من شرطة مائلة,থেকে/,İtibaren/
+to,To,A,إلى,প্রতি,İle
+request Money,Request Money,Solicitar Dinero,طلب المال,টাকা অনুরোধ করুন,Para İsteği
+remarks,Remarks,Observaciones,ملاحظات,মন্তব্য,Notlar
+optional,Optional,Opcional,اختياري,ঐচ্ছিক,İsteğe bağlı
+share Request Money,Share Request Money,Compartir Solicitud de Dinero,مشاركة طلب الأموال,শেয়ার অনুরোধ টাকা,Paylaşım Talebi Parası
+share,Share,Compartir,مشاركة,শেয়ার করুন,Paylaşmak
+available Balance,Available Balance,Saldo Disponible,الرصيد المتاح,উপলভ্য ব্যালেন্স,Mevcut Bakiye
+receiver,Receiver,Receptor,المستلم,রিসিভার,Alıcı
+profile Label,Profile,Perfil,تسمية الملف الشخصي,প্রোফাইল,Profil
+full Name,Full Name,Nombre Completo,الاسم الكامل,পুরো নাম,Ad Soyad
+country,Country,País,البلد,দেশ,Ülke
+mobile Number,Mobile Number,Número de Teléfono Móvil,رقم الجوال,মোবাইল নম্বর,Cep numarası
+state,State,Estado,الولاية,রাজ্য,Durum
+city,City,Ciudad,المدينة,শহর,Şehir
+zipCode,Zip Code,Código Postal,الرمز البريدي,জিপ কোড,Posta kodu
+address,Address,Dirección,العنوان,ঠিকানা,Adres
+update,Update,Actualizar,تحديث,আপডেট,Güncelleme
+paid,Paid,Pagado,تم الدفع,পেড,Paralı
+sent,Sent,Enviado,تم الإرسال,পাঠানো হয়েছে,Gönderilmiş
+unPaid,UnPaid,No Pagado,لم يتم الدفع,আনপেইড,Ödenmemiş
+invoice Number,Invoice Number,Número de Factura,رقم الفاتورة,চালান নম্বর,Fatura Numarası
+invoice Date,Invoice Date,Fecha de Factura,تاريخ الفاتورة,চালানের তারিখ,Fatura Tarihi
+currency,Currency,Moneda,العملة,মুদ্রা,Para birimi
+pickGoods,Pick Goods,Seleccionar Productos,اختيار البضائع,পণ্য বাছাই,Malları Seçin
+trick Goods,Trick Goods,Productos Trucados,اختيار البضائع,কৌশল পণ্য,Hileli Ürünler
+form,From/,Desde/,النموذج,থেকে/,İtibaren/
+total Bill,Total Bill,Total de la Factura,الفاتورة الإجمالية,মোট বিল,Toplam Fatura
+create Invoice,Create Invoice,Crear Factura,إنشاء فاتورة,চালান তৈরি করুন,Fatura Oluştur
+invoice To,Invoice To,Facturar a,إلى الفاتورة,চালান থেকে,Fatura Adresi
+billing Address,Billing Address,Dirección de Facturación,عنوان الفواتير,বিলিং ঠিকানা,Fatura Adresi
+notes,Notes,Notas,ملاحظات,নোট,Notlar
+item Details,Item Details,Detalles del Artículo,تفاصيل العنصر,আইটেম বিবরণ,Ürün Ayrıntıları
+client Name,Client Name,Nombre del Cliente,اسم العميل,ক্লায়েন্টের নাম,Müşteri Adı
+addNew,Add New,Agregar Nuevo,إضافة جديد,নতুন যোগ করুন,Yeni Ekle
+item Name,Item Name,Nombre del Artículo,اسم العنصر,আইটেমের নাম,Ürün Adı
+voucher,Voucher,Vale,قسيمة,ভাউচার,Kupon
+redeem,Redeem,Canjear,استبدال,খালাস,Kurtar
+used,Used,Usado,تم استخدامها,ব্যবহৃত,Kullanılmış
+not Used,Not Used,No Usado,غير مستخدمة,ব্যবহার করা হয়নি,Kullanılmıyor
+name,Name,Nombre,الاسم,নাম,İsim
+email,Email,Correo Electrónico,البريد الإلكتروني,ইমেইল,E-posta
+phone,Phone,Teléfono,الهاتف,ফোন,Telefon
+fees And Charge,Fees & Charge,Tarifas y Cargos,الرسوم والتكاليف,ফি এবং চার্জ,Ücretler ve Masraflar
+status,Status,Estado,الحالة,স্ট্যাটাস,Durum
+code,Code,Código,الرمز,কোড,Kod
+create Voucher,Create Voucher,Crear Vale,إنشاء قسيمة,ভাউচার তৈরি করুন,Kupon Oluştur
+confirm Redeem,Confirm Redeem,Confirmar Canjeo,تأكيد الاستبدال,রিডিম নিশ্চিত করুন,Onayla Kullan
+redeem Code,Redeem Code,Código de Canjeo,رمز الاستبدال,কোড রিডিম করুন,Kodu Kullan
+addMoney  Log,Add Money Log,Registro de Ingreso de Dinero,سجل إضافة المال,টাকা লগ যোগ করুন,Para Ekleme Günlüğü
+money Out Log,Money Out Log,Registro de Retiros,سجل إخراج المال,মানি আউট লগ,Para Çıkış Günlüğü
+exchange Log,Exchange Log,Registro de Cambio de Moneda,سجل التبادل,বিনিময় লগ,Borsa Günlüğü
+request Log,Request Log,Registro de Solicitudes,سجل الطلب,অনুরোধ লগ,İstek Günlüğü
+back To Home,Back To Home,Volver a Inicio,العودة إلى الصفحة الرئيسية,বাড়িতে ফিরে যান,Ana Sayfaya Dönüş
+enable 2fa Security,Enable 2FA Security,Habilitar Seguridad 2FA,تمكين أمان خطوتين,2FA নিরাপত্তা সক্ষম করুন,2FA Güvenliğini Etkinleştirin
+send Verification Code,Send Verification Code,Enviar Código de Verificación,إرسال رمز التحقق,যাচাইকরণ কোড পাঠান,Doğrulama Kodunu Gönder
+individual,Individual,Individual,فردي,ব্যক্তি,Bireysel
+business,Business,Negocio,تجاري,ব্যবসা,İşletme
+middle Name,Middle Name,Segundo Nombre,الاسم الأوسط,মধ্য নাম,İkinci ad
+userName,Username,Nombre de Usuario,اسم المستخدم,ব্যবহারকারীর নাম,Kullanıcı adı
+postal Code,Postal Code,Código Postal,الرمز البريدي,পোস্টাল কোড,Posta Kodu
+company Name,Company Name,Nombre de la Empresa,اسم الشركة,কোম্পানির নাম,Firma Adı
+gender,Gender,Género,الجنس,লিঙ্গ,Cinsiyet
+date Of Birth,Date of Birth,Fecha de Nacimiento,تاريخ الميلاد,জন্ম তারিখ,Doğum Tarihi
+nationality,Nationality,Nacionalidad,الجنسية,জাতীয়তা,Milliyet
+my Receipt,My Receipt,Mi Recibo,إيصالي,আমার রসিদ,Fişim
+total Exchanged Amount,Total Exchanged Amount,Cantidad Total Cambiada,المبلغ المبادل الإجمالي,মোট বিনিময় পরিমাণ,Toplam Değiştirilen Tutar
+converted Amount,Converted Amount,Cantidad Convertida,المبلغ المحول,রূপান্তরিত পরিমাণ,Dönüştürülen Tutar
+requested Amount,Requested Amount,Cantidad Solicitada,المبلغ المطلوب,অনুরোধকৃত পরিমাণ,Talep Edilen Tutar
+on Board Title,Secure Investment Platform,Plataforma de Inversión Segura,عنوان اللوحة,নিরাপদ বিনিয়োগ প্ল্যাটফর্ম,Güvenli Yatırım Platformu
+on Board Description,By investing money you can easily earn through this system.,Al invertir dinero puedes ganar fácilmente a través de este sistema.,وصف اللوحة,অর্থ বিনিয়োগ করে আপনি সহজেই এই সিস্টেমের মাধ্যমে আয় করতে পারেন।,Bu sistem üzerinden paranızı yatırarak rahatlıkla kazanç elde edebilirsiniz.
+welcome Text,Welcome to CyrpInvest,Bienvenido a CrypInvest,نص الترحيب,CyrpInvest স্বাগতম,CyrpInvest'e Hoş Geldiniz
+welcome Subtitle Text,By investing money you can easily earn through this system.,Al invertir dinero puedes ganar fácilmente a través de este sistema.,نص العنوان الفرعي الترحيبي,অর্থ বিনিয়োগ করে আপনি সহজেই এই সিস্টেমের মাধ্যমে আয় করতে পারেন।,Bu sistem üzerinden paranızı yatırarak rahatlıkla kazanç elde edebilirsiniz.
+sign In Subtitle,"Our secure login process ensures the confidentiality of your information. Log in today and stay connected to your finances, anytime and anywhere.",Nuestro proceso de inicio de sesión seguro garantiza la confidencialidad de tu información. Inicia sesión hoy y mantente conectado a tus finanzas en cualquier momento y lugar.,تسجيل الدخول العنوان الفرعي,আমাদের নিরাপদ লগইন প্রক্রিয়া আপনার তথ্যের গোপনীয়তা নিশ্চিত করে। আজই লগ ইন করুন এবং যেকোনো সময় এবং যে কোনো জায়গায় আপনার অর্থের সাথে সংযুক্ত থাকুন।,"Güvenli giriş sürecimiz, bilgilerinizin gizliliğini sağlar. Hemen giriş yapın ve finansal işlemlerinizle her zaman, her yerden bağlantıda kalın."
+forgot Password,Forgot Password?,¿Olvidaste tu Contraseña?,نسيت كلمة المرور,পাসওয়ার্ড ভুলে গেছেন?,Parolanızı mı unuttunuz?
+forgot Password Secondary,Forgot Password,Olvidé Contraseña,نسيت كلمة المرور الثانوية,পাসওয়ার্ড ভুলে গেছি,Parolanızı mı unuttunuz
+do Not Have An Account,Don't have an account?,¿No tienes una cuenta?,ليس لديك حساب,একটি অ্যাকাউন্ট নেই?,Hesabınız yok mu?
+enter Your Email To Reset Password,Take control of your account by resetting your password. Our password recovery page guides you through the necessary steps.,Toma el control de tu cuenta restableciendo tu contraseña. Nuestra página de recuperación de contraseña te guiará a través de los pasos necesarios.,أدخل بريدك الإلكتروني لإعادة تعيين كلمة المرور,আপনার পাসওয়ার্ড রিসেট করে আপনার অ্যাকাউন্টের নিয়ন্ত্রণ নিন। আমাদের পাসওয়ার্ড পুনরুদ্ধার পৃষ্ঠা প্রয়োজনীয় পদক্ষেপের মাধ্যমে আপনাকে গাইড করে।,"Şifrenizi sıfırlayarak hesabınızın kontrolünü elinize alın. Şifre kurtarma sayfamız, gerekli adımlarda size rehberlik edecektir."
+verification Code,OTP Verification,Verificación OTP,رمز التحقق,OTP যাচাইকরণ,OTP Doğrulaması
+enter Verification Code Text One,We sent a 6-digit code to your email,Hemos enviado un código de 6 dígitos a tu correo electrónico,أدخل نص رمز التحقق الأول,আমরা আপনার ইমেলে একটি 6-সংখ্যার কোড পাঠিয়েছি,E-postanıza 6 haneli bir kod gönderdik
+google Code Here,Enter the google authentication code here,Ingresa el código de autenticación de Google aquí,رمز Google هنا,এখানে গুগল প্রমাণীকরণ কোড লিখুন,Google kimlik doğrulama kodunu buraya girin
+resend Code,Resend Code,Reenviar Código,إعادة إرسال الرمز,কোড পুনরায় পাঠান,Kodu Yeniden Gönder
+did Not Get Code,didn't get any code?,¿No recibiste ningún código?,لم تحصل على الرمز,কোন কোড পাননি?,Hiçbir kod alamadın mı?
+reset Password Success Text,Your password has been successfully reset. Sign in again now.,Tu contraseña se ha restablecido con éxito. Inicia sesión de nuevo ahora.,نجاح إعادة تعيين كلمة المرور الجديدة,আপনার পাসওয়ার্ড সফলভাবে পুনরায় সেট করা হয়েছে. এখন আবার সাইন ইন করুন.,Şifreniz başarıyla sıfırlandı. Şimdi tekrar oturum açın.
+enter New Password,Enter New Password,Ingresa Nueva Contraseña,أدخل كلمة المرور الجديدة,নতুন পাসওয়ার্ড দিন,Yeni Şifreyi Girin
+enter Confirm Password,Enter Confirm Password,Confirma Contraseña,أدخل تأكيد كلمة المرور,কনফার্ম পাসওয়ার্ড দিন,Şifreyi Onayla'yı Girin
+go To Sign In,Go To Sign In,Ir a Iniciar Sesión,انتقل إلى تسجيل الدخول,সাইন ইন করতে যান,Giriş Yapmaya Git
+go To Dashboard,Go To Dashboard,Ir a Panel de Control,انتقل إلى لوحة المعلومات,ড্যাশবোর্ডে যান,Gösterge Tablosuna Git
+sign Up Subtitle,Become a part of our community by registering for an account today. Enjoy a range of benefits and features tailored to meet your needs.,Conviértete en parte de nuestra comunidad registrándote para una cuenta hoy. Disfruta de una variedad de beneficios y características diseñadas para satisfacer tus necesidades.,التسجيل العنوان الفرعي,আজই একটি অ্যাকাউন্টের জন্য নিবন্ধন করে আমাদের সম্প্রদায়ের একটি অংশ হয়ে উঠুন। আপনার প্রয়োজন মেটানোর জন্য তৈরি করা বিভিন্ন সুবিধা এবং বৈশিষ্ট্য উপভোগ করুন।,Bugün bir hesap oluşturarak topluluğumuzun bir parçası olun. İhtiyaçlarınıza özel olarak tasarlanmış çeşitli avantaj ve özelliklerin keyfini çıkarın.
+enter Name,Enter Name,Ingresa Nombre,أدخل الاسم,নাম লিখুন,Adınızı Girin
+already Have An Account,Already have an account?,¿Ya tienes una cuenta?,لديك بالفعل حساب,ইতিমধ্যে একটি অ্যাকাউন্ট আছে?,Zaten bir hesabınız var mı?
+agreed With Terms,Terms of Use & Privacy Policy,Términos de Uso y Política de Privacidad,موافق على الشروط,ব্যবহারের শর্তাবলী এবং গোপনীয়তা নীতি,Kullanım Şartları ve Gizlilik Politikası
+terms,Terms of Use & Privacy Policy,Términos de Uso y Política de Privacidad,الشروط,ব্যবহারের শর্তাবলী এবং গোপনীয়তা নীতি,Kullanım Şartları ve Gizlilik Politikası
+agree With,I have agreed with,He acordado con,موافق على,আমি সঙ্গে একমত,Ben kabul ettim
+sign Up Success Text,Your account has been create successfully. Thanks for using CrypInvest.,Tu cuenta se ha creado correctamente. Gracias por usar CrypInvest.,نجاح التسجيل,আপনার অ্যাকাউন্ট সফলভাবে তৈরি করা হয়েছে. CrypInvest ব্যবহার করার জন্য ধন্যবাদ.,Hesabınız başarıyla oluşturuldu. CrypInvest'i kullandığınız için teşekkür ederiz.
+my Invest,My Invest,Mi Inversión,استثماري,আমার বিনিয়োগ,Benim Yatırımım
+profit Log,Profit Log,Registro de Ganancias,سجل الأرباح,লাভ লগ,Kar Günlüğü
+settings,Settings,Configuración,الإعدادات,সেটিংস,Ayarlar
+users Name,Admeral Vison,Admeral Vison,اسم المستخدم,অ্যাডমেরাল ভিসন,Amiral Vison
+kyc Verification,KYC Verification,Verificación KYC,التحقق KYC,কেওয়াইসি যাচাইকরণ,KYC Doğrulaması
+change Language,Change Language,Cambiar Idioma,تغيير اللغة,ভাষা পরিবর্তন করুন,Dili Değiştir
+delete Account,Delete Account,Eliminar Cuenta,حذف الحساب,অ্যাকাউন্ট মুছুন,Hesabı Sil
+iD Type,ID Type,Tipo de ID,نوع الهوية,আইডি টাইপ,Kimlik Türü
+select Id Type,Select ID Type,Seleccionar Tipo de ID,اختر نوع الهوية,আইডি টাইপ নির্বাচন করুন,Kimlik Türünü Seçin
+enable Two FA Security,Enable 2FA Security,Habilitar Seguridad 2FA,تمكين أمان خطوتين,2FA নিরাপত্তা সক্ষম করুন,2FA Güvenliğini Etkinleştirin
+enable Two FA Security Subtitle,We'll ask for a verification code via your security method if we notice a sign in from an unrecognized device or browser. Enable your 2FA Security.,Solicitaremos un código de verificación a través de tu método de seguridad si notamos un inicio de sesión desde un dispositivo o navegador no reconocido. Habilita tu Seguridad 2FA.,تمكين أمان خطوتين العنوان الفرعي,যদি আমরা একটি অচেনা ডিভাইস বা ব্রাউজার থেকে সাইন ইন লক্ষ্য করি তাহলে আমরা আপনার নিরাপত্তা পদ্ধতির মাধ্যমে একটি যাচাইকরণ কোড চাইব৷ আপনার 2FA নিরাপত্তা সক্ষম করুন।,"Tanınmayan bir cihazdan veya tarayıcıdan oturum açıldığını fark edersek, güvenlik yönteminiz aracılığıyla bir doğrulama kodu isteyeceğiz. 2FA Güvenliğinizi etkinleştirin."
+invest Plan,Invest Plan,Plan de Inversión,خطة الاستثمار,বিনিয়োগ পরিকল্পনা,Yatırım Planı
+Add Money,Add Money,Agregar Dinero,إيداع المال,টাকা যোগ করুন,Para Ekle
+money Transfer,Money Transfer,Transferir Dinero,تحويل الأموال,মানি ট্রান্সফার,Para Transferi
+uSD,USD,USD,دولار أمريكي,মার্কিন ডলার,Amerikan Doları
+limit,Limit:,Límite:,الحد,সীমা:,Sınır:
+rate,Rate:,Tarifa:,السعر,হার:,Oran:
+add Money Congratulation Subtitle,Your money has been added successfully. Thanks for using CrypInvest.,Tu dinero se ha agregado con éxito. Gracias por usar CrypInvest.,تهانينا على إيداع المال العنوان الفرعي,আপনার টাকা সফলভাবে যোগ করা হয়েছে. CrypInvest ব্যবহার করার জন্য ধন্যবাদ.,Paranız başarıyla eklendi. CrypInvest'i kullandığınız için teşekkür ederiz.
+entered Amount,Entered Amount,Cantidad Ingresada,المبلغ المدخل,পরিমাণ প্রবেশ করান,Girilen Tutar
+amount Information,Amount Information,Información de la Cantidad,معلومات المبلغ,পরিমাণ তথ্য,Miktar Bilgileri
+enter Amount,Enter Amount,Ingresa la Cantidad,أدخل المبلغ,পরিমাণ লিখুন,Tutarı Girin
+youWill Get,You Will Get,Recibirás,ستحصل على,আপনি পাবেন,Alacaksın
+total Payable,Total Payable,Total a Pagar,المجموع المستحق,মোট প্রদেয়,Toplam Ödenecek Tutar
+charges,charges,cargos,الرسوم,চার্জ,suçlamalar
+money Out Congratulation Subtitle,Your money has been out successfully. Thanks for using CrypInvest.,Tu dinero se ha retirado con éxito. Gracias por usar CrypInvest.,تهانينا على سحب الأموال العنوان الفرعي,আপনার টাকা সফলভাবে আউট হয়েছে. CrypInvest ব্যবহার করার জন্য ধন্যবাদ.,Paranız başarıyla çekildi. CrypInvest'i kullandığınız için teşekkürler.
+sending Amount,Sending Amount,Cantidad a Enviar,المبلغ المرسل,পাঠানোর পরিমাণ,Gönderim Tutarı
+enter Sending Amount,Enter Sending Amount,Ingresa la Cantidad a Enviar,أدخل المبلغ المرسل,পাঠানোর পরিমাণ লিখুন,Gönderim Tutarını Girin
+receiver Email Address,Receiver Email Address,Dirección de Correo Electrónico del Receptor,عنوان البريد الإلكتروني للمستلم,রিসিভার ইমেল ঠিকানা,Alıcı E-posta Adresi
+receiver Information,Receiver Information,Información del Receptor,معلومات المستلم,রিসিভার তথ্য,Alıcı Bilgileri
+enter Receiver Email Address,Enter Receiver Email Address,Ingresa la Dirección de Correo Electrónico del Receptor,أدخل عنوان البريد الإلكتروني للمستلم,রিসিভার ইমেল ঠিকানা লিখুন,Alıcı E-posta Adresini Girin
+profile update,Your money has been transfer successfully. Thanks for using CrypInvest.,Tu dinero se ha transferido con éxito. Gracias por usar CrypInvest.,تحديث الملف الشخصي,আপনার টাকা সফলভাবে স্থানান্তর করা হয়েছে. CrypInvest ব্যবহার করার জন্য ধন্যবাদ.,Paranız başarıyla transfer edildi. CrypInvest'i kullandığınız için teşekkür ederiz.
+cornel,cornel,cornel,الحصى,কর্নেল,kızılcık
+ari chart,Arichart,Arichart,مخطط الأسعار,আরিচার্ট,Arichart
+phone Number,Phone Number,Número de Teléfono,رقم الهاتف,ফোন নম্বর,Telefon Numarası
+enter City,Enter City,Ingresa la Ciudad,أدخل المدينة,শহরে প্রবেশ করুন,Şehir Girin
+enter State,Enter State,Ingresa el Estado,أدخل الولاية,রাজ্যে প্রবেশ করুন,Duruma Girin
+enter Address,Enter Address,Ingresa la Dirección,أدخل العنوان,ঠিকানা লিখুন,Adresi Girin
+enter ZipCode,Enter ZipCode,Ingresa el Código Postal,أدخل الرمز البريدي,জিপকোড লিখুন,Posta Kodunu Girin
+update Profile,Update Profile,Actualizar Perfil,تحديث الملف الشخصي,প্রোফাইল আপডেট করুন,Profili Güncelle
+choose Plan,Choose Plan,Seleccionar Plan,اختر خطة,পরিকল্পনা নির্বাচন করুন,Plan Seçin
+investment,Investment,Inversión,الاستثمار,বিনিয়োগ,Yatırım
+proceed,Proceed,Continuar,متابعة,এগিয়ে যান,İlerlemek
+no,No,No,لا,না,HAYIR
+yes,Yes,Sí,نعم,হ্যাঁ,Evet
+investment Amount,Investment Amount,Cantidad de Inversión,مبلغ الاستثمار,বিনিয়োগের পরিমাণ,Yatırım Tutarı
+enter Investment Amount,Enter investment amount,Ingresa la Cantidad de Inversión,أدخل مبلغ الاستثمار,বিনিয়োগের পরিমাণ লিখুন,Yatırım tutarını girin
+term And Condition,I have agreed with Terms & Conditions,He acordado con los Términos y Condiciones,الشروط والأحكام,আমি শর্তাবলীর সাথে একমত হয়েছি,Şartlar ve Koşullar'ı kabul ettim
+goto My Invest,Go To My Invest,Ir a Mi Inversión,الانتقال إلى استثماري,আমার বিনিয়োগে যান,Yatırımıma Git
+my Invest Congratulation,Your investment plan has been purchase successfully. Thanks for using CrypInvest.,Tu plan de inversión se ha comprado con éxito. Gracias por usar CrypInvest.,تهانينا على استثماري,আপনার বিনিয়োগ পরিকল্পনা সফলভাবে কেনা হয়েছে. CrypInvest ব্যবহার করার জন্য ধন্যবাদ.,Yatırım planınız başarıyla satın alındı. CrypInvest'i kullandığınız için teşekkür ederiz.
+accept Terms,please accept our Terms of Use & Privacy Policy for create account,"Por favor, acepta nuestros Términos de Uso y Política de Privacidad para crear una cuenta",قبول الشروط,অ্যাকাউন্ট তৈরি করার জন্য আমাদের ব্যবহারের শর্তাবলী এবং গোপনীয়তা নীতি গ্রহণ করুন,Lütfen hesap oluşturmak için Kullanım Şartlarımızı ve Gizlilik Politikamızı kabul edin
+do YouSign Out,Do you Want to Sign Out from this Device?,¿Deseas cerrar la sesión en este dispositivo?,هل ترغب في تسجيل الخروج؟,আপনি কি এই ডিভাইস থেকে সাইন আউট করতে চান?,Bu Cihazdan Çıkış Yapmak İstiyor musunuz?
+sign Out Alert,Sign Out Alert,Alerta de Cierre de Sesión,تنبيه تسجيل الخروج,সাইন আউট সতর্কতা,Çıkış Uyarısı
+select Country,Select country,Seleccionar país,اختر البلد,দেশ নির্বাচন করুন,Ülkeyi seçin
+maximum Invest,Maximum Investment,Inversión Máxima,الحد الأقصى للإستثمار,সর্বোচ্চ বিনিয়োগ,Maksimum Yatırım
+fixed Profit,Fixed Profit,Beneficio Fijo,الربح الثابت,স্থায়ী লাভ,Sabit Kâr
+percentage Profit,Percentage Profit,Beneficio Porcentaje,نسبة الربح,শতাংশ লাভ,Yüzde Kar
+minimum Profit,Minimum Invest,Inversión Mínima,الحد الأدنى للربح,ন্যূনতম বিনিয়োগ,Minimum Yatırım
+profit Return Type,profit_return_type,profit_return_type,نوع عائد الربح,লাভ_রিটার্ন_টাইপ,kar_getiri_türü
+just Click To Try This,Just Click To Try This,Solo Haz Clic Para Intentarlo,ما عليك سوى النقر لتجربته,শুধু এটি চেষ্টা করার জন্য ক্লিক করুন,Denemek İçin Tıklayın
+duration,Duration,Duración,المدة,সময়কাল,Süre
+profit Return,Profit Return Type,Tipo de Retorno de Beneficios,عائد الربح,লাভ রিটার্ন টাইপ,Kar Getiri Türü
+days,Days,Días,أيام,দিন,Günler
+profit,Profit,Beneficio,ربح,লাভ,Kâr
+pending,Pending,Pendiente,معلق,মুলতুবি,Askıda olması
+rejected,Rejected,Rechazado,مرفوض,প্রত্যাখ্যাত,Reddedilmiş
+success,Success,Éxito,نجاح,সফলতা,Başarı
+verified,Verified,Verificado,تم التحقق,যাচাই করা হয়েছে,Doğrulandı
+updateKYC,Update KYC,Actualizar KYC,تحديث KYC,KYC আপডেট করুন,KYC'yi güncelle
+empty Status,No Data Found!,No se encontraron datos.,الحالة فارغة,কোন তথ্য পাওয়া যায়নি!,Veri Bulunamadı!
+paypal,Paypal Screen,Pantalla de Paypal,بايبال,পেপ্যাল স্ক্রিন,Paypal Ekranı
+coinGate,CoinGate Screen,Pantalla de CoinGate,كوين جيت,কয়েনগেট স্ক্রিন,CoinGate Ekranı
+manual Input,Manual screen,Pantalla Manual,إدخال يدوي,ম্যানুয়াল পর্দা,Manuel ekran
+please Follow The Limit,Please! Follow the Limit.,¡Por favor! Sigue el Límite.,يرجى اتباع الحد,দয়া করে! সীমা অনুসরণ করুন।,Lütfen! Sınırı Takip Edin.
+evidence Note,Evidence Note,Nota de Prueba,ملاحظة الدليل,প্রমাণ নোট,Kanıt Notu
+image Path Required,Image path is required,Se requiere la ruta de la imagen,مطلوب مسار الصورة,ইমেজ পাথ প্রয়োজন,Görüntü yolu gerekli
+no Wallet,No wallet,Sin monedero,لا توجد محفظة,মানিব্যাগ নেই,Cüzdan yok
+alert,Alert,Alerta,تنبيه,সতর্কতা,Uyarı
+success Snack,Success,Éxito,نجاح الوجبة,সফলতা,Başarı
+dismiss,Dismiss,Descartar,تجاهل,খারিজ,Azletmek
+Welcome To,Welcome To,Bienvenido a,مرحبًا بك في,স্বাগতম,Hoş Geldiniz
+Admin Panel,Admin Panel,Panel de Administración,لوحة الإدارة,অ্যাডমিন প্যানেল,Yönetici Paneli
+Setup Currency,Setup Currency,Configurar Moneda,إعداد العملة,সেটআপ মুদ্রা,Kurulum Para Birimi
+Fees & Charges,Fees & Charges,Tarifas y Cargos,الرسوم والرسوم,ফি এবং চার্জ,Ücretler ve Masraflar
+Subscribers,Subscribers,Suscriptores,المشتركون,সাবস্ক্রাইবার,Aboneler
+Contact Messages,Contact Messages,Mensajes de Contacto,رسائل الاتصال,যোগাযোগ বার্তা,İletişim Mesajları
+Investment Plan,Investment Plan,Plan de Inversión,خطط الاستثمار,বিনিয়োগ পরিকল্পনা,Yatırım Planı
+Add Money Logs,Add Money Logs,Registros de Agregar Dinero,سجلات إيداع الأموال,টাকা লগ যোগ করুন,Para Kayıtları Ekle
+Pending Logs,Pending Logs,Registros Pendientes,سجلات معلقة,মুলতুবি লগ,Bekleyen Günlükler
+Completed Logs,Completed Logs,Registros Completados,سجلات مكتملة,সম্পন্ন লগ,Tamamlanmış Günlükler
+Canceled Logs,Canceled Logs,Registros Cancelados,سجلات ملغاة,বাতিল লগ,İptal Edilen Günlükler
+All Logs,All Logs,Todos los Registros,جميع السجلات,সমস্ত লগ,Tüm Günlükler
+Money Out Logs,Money Out Logs,Registros de Retiro de Dinero,سجلات سحب الأموال,মানি আউট লগ,Para Çıkış Kayıtları
+Money Transfer Logs,Money Transfer Logs,Registros de Transferencia de Dinero,سجلات تحويل الأموال,মানি ট্রান্সফার লগ,Para Transferi Kayıtları
+Invest Profit Logs,Invest Profit Logs,Registros de Ganancias de Inversión,سجلات ربح الاستثمار,লাভ লগ বিনিয়োগ,Yatırım Kar Kayıtları
+User Care,User Care,Atención al Usuario,رعاية المستخدم,ইউজার কেয়ার,Kullanıcı Bakımı
+Active Users,Active Users,Usuarios Activos,المستخدمون النشطون,সক্রিয় ব্যবহারকারী,Aktif Kullanıcılar
+Email Unverified,Email Unverified,Correo Electrónico no Verificado,البريد الإلكتروني غير المتحقق,ইমেল যাচাই করা হয়নি,E-posta Doğrulanmadı
+KYC Unverified,KYC Unverified,KYC no Verificado,KYC غير المتحقق,কেওয়াইসি যাচাই করা হয়নি,KYC Doğrulanmadı
+All Users,All Users,Todos los Usuarios,جميع المستخدمين,সমস্ত ব্যবহারকারী,Tüm Kullanıcılar
+Email To Users,Email To Users,Enviar Correo Electrónico a los Usuarios,البريد إلى المستخدمين,ব্যবহারকারীদের ইমেল,Kullanıcılara E-posta
+Banned Users,Banned Users,Usuarios Baneados,المستخدمون المحظورون,নিষিদ্ধ ব্যবহারকারী,Yasaklı Kullanıcılar
+Admin Care,Admin Care,Atención al Administrador,رعاية المسؤول,অ্যাডমিন কেয়ার,İdari Bakım
+All Admin,All Admin,Todos los Administradores,جميع المسؤولين,সকল এডমিন,Tüm Yönetici
+Admin Role,Admin Role,Rol del Administrador,دور المسؤول,অ্যাডমিনের ভূমিকা,Yönetici Rolü
+Role Permission,Role Permission,Permiso de Rol,أذونة الدور,ভূমিকা অনুমতি,Rol İzni
+Email To Admin,Email To Admin,Enviar Correo Electrónico al Administrador,البريد إلى المسؤول,অ্যাডমিনকে ইমেল করুন,Yöneticiye E-posta
+Web Settings,Web Settings,Configuración del Sitio Web,إعدادات الويب,ওয়েব সেটিংস,Web Ayarları
+Basic Settings,Basic Settings,Configuración Básica,الإعدادات الأساسية,মৌলিক সেটিংস,Temel Ayarlar
+Setup SEO,Setup SEO,Configurar SEO,إعداد SEO,এসইও সেটআপ করুন,SEO Kurulumu
+App Settings,App Settings,Configuración de la Aplicación,إعدادات التطبيق,অ্যাপ সেটিংস,Uygulama Ayarları
+Splash Screen,Splash Screen,Pantalla de Inicio,شاشة البداية,স্প্ল্যাশ স্ক্রিন,Açılış Ekranı
+Default,Default,Predeterminado,الافتراضي,ডিফল্ট,Varsayılan
+Interface Panel,Interface Panel,Panel de Interfaz,لوحة الواجهة,ইন্টারফেস প্যানেল,Arayüz Paneli
+Onboard Screen,Onboard Screen,Pantalla de Bienvenida,شاشة التوجيه,অনবোর্ড স্ক্রীন,Yerleşik Ekran
+App URLs,App URLs,URLs de la Aplicación,روابط التطبيق,অ্যাপ URL,Uygulama URL'leri
+Languages,Languages,Idiomas,اللغات,ভাষা,Diller
+Money Out Settings,Money Out Settings,Configuración de Retiro de Dinero,إعدادات السحب,মানি আউট সেটিংস,Para Çekme Ayarları
+Verification Center,Verification Center,Centro de Verificación,مركز التحقق,যাচাইকরণ কেন্দ্র,Doğrulama Merkezi
+Setup Email,Setup Email,Configuración de Correo Electrónico,إعدادات البريد الإلكتروني,ইমেল সেটআপ করুন,E-posta Kurulumu
+Email Method,Email Method,Método de Correo Electrónico,طريقة البريد الإلكتروني,ইমেইল পদ্ধতি,E-posta Yöntemi
+Setup KYC,Setup KYC,Configuración de KYC,إعداد KYC,KYC সেটআপ করুন,KYC Kurulumu
+Setup Web Content,Setup Web Content,Contenido Web,إعداد محتوى الويب,ওয়েব কন্টেন্ট সেটআপ করুন,Web İçeriği Kurulumu
+Setup Section,Setup Section,Configuración de Sección,إعداد القسم,সেটআপ বিভাগ,Kurulum Bölümü
+Banner Section,Banner Section,Sección de Banner,القسم الرئيسي,ব্যানার বিভাগ,Banner Bölümü
+Brand Section,Brand Section,Sección de Marca,القسم العلامي,ব্র্যান্ড বিভাগ,Marka Bölümü
+About Us Section,About Us Section,Sección Acerca de Nosotros,قسم حولنا,আমাদের সম্পর্কে বিভাগ,Hakkımızda Bölümü
+Services Section,Services Section,Sección de Servicios,قسم الخدمات,সেবা বিভাগ,Hizmetler Bölümü
+Feature Section,Feature Section,Sección de Características,قسم الميزات,বৈশিষ্ট্য বিভাগ,Özellik Bölümü
+Clients Feedback,Clients Feedback,Comentarios de Clientes,تقييمات العملاء,গ্রাহকদের প্রতিক্রিয়া,Müşteri Geri Bildirimleri
+Announcements,Announcements,Anuncios,الإعلانات,ঘোষণা,Duyurular
+How It Work Section,How It Work Section,Cómo Funciona la Sección,كيفية العمل,কিভাবে এটা কাজ বিভাগ,Nasıl Çalışır Bölümü
+About Page Section,About Page Section,Sección Acerca de Nosotros,قسم حول الصفحة,পৃষ্ঠা বিভাগ সম্পর্কে,Hakkımızda Sayfası Bölümü
+Contact US Section,Contact US Section,Sección de Contacto,قسم اتصل بنا,মার্কিন বিভাগে যোগাযোগ করুন,Bize Ulaşın Bölümü
+Footer Section,Footer Section,Sección de Pie de Página,قسم التذييل,ফুটার বিভাগ,Altbilgi Bölümü
+Setup Pages,Setup Pages,Configuración de Páginas,إعداد الصفحات,সেটআপ পেজ,Kurulum Sayfaları
+Extensions,Extensions,Extensiones,الامتدادات,এক্সটেনশন,Uzantılar
+Useful Links,Useful Links,Enlaces Útiles,روابط مفيدة,দরকারী লিঙ্ক,Faydalı Bağlantılar
+Payment Methods,Payment Methods,Métodos de Pago,وسائل الدفع,পেমেন্ট পদ্ধতি,Ödeme Yöntemleri
+Automatic,Automatic,Automático,تلقائي,স্বয়ংক্রিয়,Otomatik
+Manual,Manual,Manual,يدوي,ম্যানুয়াল,Manuel
+Money Out,Money Out,Retiro de Dinero,سحب المال,টাকা আউট,Para Çıkışı
+Notification,Notification,Notificación,الإشعار,বিজ্ঞপ্তি,Bildiri
+Push Notification,Push Notification,Notificación Push,إشعار الدفع,পুশ বিজ্ঞপ্তি,Anında Bildirim
+Setup Notification,Setup Notification,Configurar Notificación,إعداد الإشعار,সেটআপ বিজ্ঞপ্তি,Kurulum Bildirimi
+Send Notification,Send Notification,Enviar Notificación,إرسال الإشعار,বিজ্ঞপ্তি পাঠান,Bildirim Gönder
+Bonus,Bonus,Bono,مكافأة,বোনাস,Bonus
+GDPR Cookie,GDPR Cookie,GDPR Cookies,GDPR الكوكيز,জিডিপিআর কুকি,GDPR Çerezi
+Server Info,Server Info,Información del Servidor,معلومات الخادم,সার্ভার তথ্য,Sunucu Bilgileri
+Clear Cache,Clear Cache,Limpiar Caché,مسح الذاكرة المؤقتة,ক্যাশে সাফ করুন,Önbelleği Temizle
+Total Add Money Request,Total Add Money Request,Solicitudes Totales de Agregar Dinero,إجمالي طلب إيداع الأموال,মোট অর্থ যোগ করুন অনুরোধ,Toplam Para Ekleme Talebi
+Add Money Balance,Add Money Balance,Saldo de Agregar Dinero,رصيد إيداع الأموال,টাকা ব্যালেন্স যোগ করুন,Para Bakiyesi Ekle
+Money Out Request,Money Out Request,Solicitudes Totales de Retiro de Dinero,طلب سحب الأموال,মানি আউট অনুরোধ,Para Çekme Talebi
+Money Out Balance,Money Out Balance,Saldo de Retiro de Dinero,رصيد سحب الأموال,মানি আউট ব্যালেন্স,Para Çıkış Bakiyesi
+User Active Tickets,User Active Tickets,Tickets Activos de Usuarios,تذاكر المستخدم النشطة,ব্যবহারকারী সক্রিয় টিকিট,Kullanıcı Aktif Biletleri
+Total Users,Total Users,Total de Usuarios,مجموع المستخدمين,মোট ব্যবহারকারী,Toplam Kullanıcılar
+Total User Invest,Total User Invest,Inversión Total de Usuarios,مجموع الاستثمارات للمستخدمين,মোট ব্যবহারকারী বিনিয়োগ,Toplam Kullanıcı Yatırımı
+Users Total Profit,Users Total Profit,Ganancias Totales de Usuarios,إجمالي أرباح المستخدمين,ব্যবহারকারীদের মোট লাভ,Kullanıcıların Toplam Karı
+Monthly Add Money Chart,Monthly Add Money Chart,Gráfico Mensual de Agregar Dinero,مخطط إضافة الأموال الشهري,মাসিক অ্যাড মানি চার্ট,Aylık Para Ekleme Tablosu
+Revenue Chart,Revenue Chart,Gráfico de Ingresos,مخطط الإيرادات,রাজস্ব চার্ট,Gelir Tablosu
+Yearly Investment Analytics,Yearly Investment Analytics,Analítica de Inversión Anual,تحليل الاستثمار السنوي,বার্ষিক বিনিয়োগ বিশ্লেষণ,Yıllık Yatırım Analitiği
+User Analytics,User Analytics,Analítica de Usuarios,تحليل المستخدم,ব্যবহারকারী বিশ্লেষণ,Kullanıcı Analitiği
+Growth,Growth,Crecimiento,نمو,বৃদ্ধি,Büyüme
+Latest Add Money,Latest Add Money,Últimos Registros de Agregar Dinero,أحدث إضافة للأموال,সর্বশেষ টাকা যোগ করুন,En Son Para Ekleme
+Download App,Download App,Descargar la Aplicación,تحميل التطبيق,অ্যাপ ডাউনলোড করুন,Uygulamayı İndir
+Login,Login,Iniciar Sesión,تسجيل الدخول,লগইন করুন,Giriş yapmak
+Contact,Contact,Contacto,اتصال,যোগাযোগ,Temas etmek
+Announcement,Announcement,Anuncios,إعلان,ঘোষণা,Duyuru
+Plan,Plan,Plan,خطة,পরিকল্পনা,Plan
+About,About,Acerca de,حول,সম্পর্কে,Hakkında
+Stay connected with us for regular updates,Stay connected with us for regular updates,Mantente conectado con nosotros para actualizaciones regulares,ابق على اتصال معنا للتحديثات العادية,নিয়মিত আপডেট পেতে আমাদের সাথে যুক্ত থাকুন,Düzenli güncellemeler için bizimle bağlantıda kalın
+Contact Us,Contact Us,Contáctanos,اتصل بنا,আমাদের সাথে যোগাযোগ করুন,Bize Ulaşın
+Layout Mode,Layout Mode,Modo de Diseño,وضع الخطة,লেআউট মোড,Düzen Modu
+Topbar Color,Topbar Color,Color de la Barra Superior,لون الشريط العلوي,টপবার রঙ,Üst Çubuk Rengi
+Dark Mode,Dark Mode,Modo Oscuro,الوضع الداكن,ডার্ক মোড,Karanlık Mod
+Light Mode,Light Mode,Modo Claro,الوضع الفاتح,হালকা মোড,Işık Modu
+Sidebar Color,Sidebar Color,Color de la Barra Lateral,لون الشريط الجانبي,সাইডবার রঙ,Kenar Çubuğu Rengi
+Min Sidebar Color,Min Sidebar Color,Color Mínimo de la Barra Lateral,لون الشريط الجانبي الدني,মিন সাইডবার রঙ,Min Kenar Çubuğu Rengi
+Direction,Direction,Dirección,الاتجاه,দিকনির্দেশনা,Yön
+RTL Support,RTL Support,Compatibilidad con RTL (Derecha a Izquierda),دعم RTL,RTL সমর্থন,RTL Desteği
+total Refers,Total Refers,Total de referencias,إجمالي المراجع,মোট রেফার,Toplam Referanslar
+total Invested,Total Invested,Total invertida,إجمالي الاستثمار,মোট বিনিয়োগ,Toplam Yatırım
+current Position,Current Position,Posición actual,الموقف الحالى,বর্তমান অবস্থান,Mevcut Pozisyon
+refer Code,Refer Code,Código de referencia,رمز الرجوع,রেফার কোড,Referans Kodu
+refer Link,Refer Link,Enlace de referencia,الرجوع الرابط,লিঙ্ক পড়ুন,Referans Bağlantısı
+referral User,Referral User,Usuario de referencia,مستخدم الإحالة,রেফারেল ব্যবহারকারী,Yönlendirme Kullanıcısı
+requirement,Requirement,Requisito,متطلبات,প্রয়োজনীয়তা,Gereklilik
+refer,Refer,Referirse,يشير إلى,উল্লেখ করুন,Bahsetmek
+invest,Invest,Invertir,يستثمر,বিনিয়োগ করুন,Yatırım
+commission,Commission,Comisión,عمولة,কমিশন,Komisyon
+per Refer,Per Refer,Por referencia,لكل مرجع,প্রতি রেফার,Referans Başına
+account Label,Account Label,Etiqueta de cuenta,تسمية الحساب,অ্যাকাউন্ট লেবেল,Hesap Etiketi
+my Status,My Status,Mi estado,حالتي,আমার স্ট্যাটাস,Durumum
+view All,View All,Ver todo,عرض الكل,সব দেখুন,Tümünü Görüntüle
+refer Friend,Refer Friend,Recomendar amiga,إحالة صديق,বন্ধু রেফার করুন,Arkadaşını Tavsiye Et
+refer Friends,Refer Friends,Recomendar amigas,إحالة الأصدقاء,বন্ধুদের উল্লেখ করুন,Arkadaşlarınızı Önerin
+copy Referral Code,Copy Referral Code,Copiar código de referencia,انسخ رمز الإحالة,রেফারেল কোড কপি করুন,Yönlendirme Kodunu Kopyala
+text Copied To Clipboard,Text Copied To Clipboard,Texto copiado al portapapeles,تم نسخ النص إلى الحافظة,ক্লিপবোর্ডে পাঠ্য অনুলিপি করা হয়েছে৷,Metin Panoya Kopyalandı
+optionals,Optionals,Opcionales,خيارات,ঐচ্ছিক,İsteğe bağlılar
+Balance Type,Balance Type,Tipo de saldo,نوع الرصيد,ব্যালেন্স টাইপ,Bakiye Türü
+server.error.default,Something went wrong! Please try again,,,,
+security.google.2fa.settings.update,Security Setting Updated Successfully!,,,,
+security.google.2fa.verification.warning,Please verify 2FA,,,,
+user.auth.authorize.verify-google-2fa,Authorize Google Two Factor,,,,
+admin.page.title.google.2fa.settings,2FA Authenticaiton,,,,

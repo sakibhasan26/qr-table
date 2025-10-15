@@ -1,0 +1,149 @@
+/*-------------------------------------------------
+    [ ## Team ]
+*/
+.team-section{
+    position: relative;
+    overflow: hidden;
+    .team-element-one{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .team-element-two{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+.team-wrapper{
+    border-bottom: 1px solid $border--base;
+    padding-bottom: 80px;
+}
+.team-item{
+    text-align: center;
+    background-color: $white;
+    border-radius: 10px;
+    padding: 50px 20px 20px 20px;
+    transition: all 0.5s;
+    &:hover,
+    &.active{
+        box-shadow: 0px 0px 15px rgb(40 36 49 / 15%);
+        .team-content{
+            .team-review{
+                opacity: 1;
+                visibility: visible;
+            }
+            .team-social{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    @media only screen and (max-width: 575px) {
+        box-shadow: 0px 0px 15px rgb(40 36 49 / 15%);
+    }
+}
+.team-thumb{
+    margin-bottom: 20px;
+}
+.team-content{
+    .title{
+        a{
+            transition: all 0.5s;
+            &:hover{
+                color: $base--color;
+            }
+        }
+    }
+    .sub-title{
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    .team-review{
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+        @media only screen and (max-width: 575px) {
+            opacity: 1;
+            visibility: visible;
+        }
+        .ratings{
+            margin-right: 5px;
+            font-weight: 500;
+        }
+        .ratings-icon{
+            i{
+                color: #f6b500;
+            }
+        }
+    }
+    .team-social{
+        border-top: 1px solid $border--base;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: -8px;
+        padding-top: 15px;
+        margin-top: 20px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+        @media only screen and (max-width: 575px) {
+            opacity: 1;
+            visibility: visible;
+        }
+        li{
+            margin: 8px;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $border--base;
+            border-radius: 50%;
+            font-size: 15px;
+        }
+    }
+}
+.team-action-area{
+    padding-top: 60px;
+}
+.team-action-wrapper{
+    position: relative;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: $bg--gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media only screen and (max-width: 767px) {
+        display: block;
+    }
+}
+.team-action-content{
+    @media only screen and (max-width: 767px) {
+        margin-bottom: 15px;
+    }
+    .title{
+        span{
+            color: $base--color;
+        }
+    }
+}
+.team-action-icon{
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $base--color;
+    color: $white;
+    font-size: 28px;
+    border-radius: 50%;
+    @media only screen and (max-width: 767px) {
+        left: -10px;
+    }
+}
