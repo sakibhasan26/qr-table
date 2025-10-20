@@ -63,6 +63,7 @@
                                                 'name'          => $item->code . "_sub_heading",
                                                 'value'         => old($item->code . "_sub_heading",$data->value->language->$lang_code->sub_heading ?? "")
                                             ])
+                                            <small>{{ __("Ex: Highlighted Words [Services]") }} </small>
                                         </div>
                                         <div class="form-group">
                                             @include('admin.components.form.input',[
@@ -147,7 +148,7 @@
                                 </div>
                             </nav>
                             <div class="tab-content" id="nav-tabContent">
-    
+
                                 @foreach ($languages as $item)
                                     @php
                                         $lang_code = $item->code;
@@ -233,6 +234,6 @@
             var message     = `Are you sure to <strong>delete</strong> item?`;
 
             openDeleteModal(actionRoute,target,message);
-        }); 
+        });
     </script>
 @endpush

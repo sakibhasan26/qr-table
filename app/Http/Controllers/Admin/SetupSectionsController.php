@@ -62,6 +62,10 @@ class SetupSectionsController extends Controller
                 'itemStore'     => "brandItemStore",
                 'itemDelete'    => "brandItemDelete",
             ],
+            'discover'    => [
+                'view'      => "discoverView",
+                'update'    => "discoverUpdate",
+            ],
             'popular'    => [
                 'view'      => "popularView",
                 'update'    => "popularUpdate",
@@ -624,6 +628,61 @@ class SetupSectionsController extends Controller
 
         return back()->with(['success' => ['Section item delete successfully!']]);
     }
+
+
+    //  Discover Section =======================================================================
+
+    public function discoverView($slug) {
+        $page_title = __("Discover Section");
+        $section_slug = Str::slug(SiteSectionConst::DISCOVER_SECTION);
+        $data = SiteSections::getData($section_slug)->first();
+        $languages = $this->languages;
+
+        return view('admin.sections.setup-sections.discover-section',compact(
+            'page_title',
+            'data',
+            'languages',
+            'slug',
+        ));
+    }
+
+    /**
+     * Method for update discover section information
+     * @param string $slug
+     * @param \Illuminate\Http\Request  $request
+     */
+    public function discoverUpdate(Request $request,$slug) {
+
+        $basic_field_name = [
+            'title'              => "required|string|max:100",
+            'heading'            => "required|string|max:500",
+            'sub_heading'        => "required|string|max:500",
+            'search_placeholder' => "required|string|max:500",
+            'search_icon'        => "required|string|max:255",
+        ];
+
+        $slug = Str::slug(SiteSectionConst::DISCOVER_SECTION);
+        $section = SiteSections::where("key",$slug)->first();
+
+        $data['image'] = $section->value->image ?? null;
+        if($request->hasFile("image")) {
+            $data['image']      = $this->imageValidate($request,"image",$section->value->image ?? null);
+        }
+
+        $data['language']  = $this->contentValidate($request,$basic_field_name);
+        $update_data['value']  = $data;
+        $update_data['key']    = $slug;
+
+        try{
+            SiteSections::updateOrCreate(['key' => $slug],$update_data);
+        }catch(Exception $e) {
+            dd($e);
+            return back()->with(['error' => ['Something went wrong! Please try again.']]);
+        }
+
+        return back()->with(['success' => ['Section updated successfully!']]);
+    }
+
 
 
 

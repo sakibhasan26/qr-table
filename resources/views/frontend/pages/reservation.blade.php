@@ -1,3 +1,7 @@
+@php
+    $select_lang = selectedLang();
+    $default_lang = system_default_lang();
+@endphp
 @extends('frontend.layouts.master')
 
 @push("css")
@@ -7,340 +11,41 @@
 @section('content')
 
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Start reservation Banner
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<section class=" reservation-banner-section ptb-100 " >
-    <div class="container">
-        <div class="row align-items-center">
-
-            <!-- Left Content Side -->
-            <div class="col-lg-6">
-                <div class="section-header">
-                    <div class="section-subtitle">
-                    <i class="fas fa-utensil-spoon left-icon"></i>
-                    <span>Popular dishes </span>
-                    <i class="fas fa-wine-glass-alt right-icon"></i>
-                    </div>
-
-                    <h2 class="section-title">
-                    Crafted with <span>Passion</span>, Served with Perfection
-                    </h2>
-
-                    <p class="section-description">
-                        QR-powered dining at your fingertips. These are the most-ordered dishes,  optimized for flavor and designed for digital simplicity.
-                    </p>
-                </div>
-            </div>
-            <!-- Right QR Code Side -->
-            <div class="col-lg-6">
-                <div class="banner-visual">
-                    <img src="{{ asset('public/frontend') }}/images/banner-images/reservation-banner-image.webp" alt="">
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-</section>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    End reservation Banner
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+@foreach ($page_section->sections ?? [] as $item)
+    @if ($item->section->key == 'banner-section')
+        @include('frontend.partials.components.banner-section')
+    @elseif ($item->section->key == 'brand-section')
+        @include('frontend.partials.components.brands-section')
+    @elseif ($item->section->key == 'discover-section')
+        @include('frontend.partials.components.discover-section')
+    @elseif ($item->section->key == 'popular-section')
+        @include('frontend.partials.components.popular-section')
+    @elseif ($item->section->key == 'what-we-serve-section')
+        @include('frontend.partials.components.what-we-serve-section')
+    @elseif ($item->section->key == 'client-feedback-section')
+        @include('frontend.partials.components.testimonial-section')
+    @elseif ($item->section->key == 'gallery-section')
+        @include('frontend.partials.components.gallery-section')
+    @elseif ($item->section->key == 'download-section')
+        @include('frontend.partials.components.download-section')
+    @elseif ($item->section->key == 'contact-us-section')
+        @include('frontend.partials.components.contact-section')
+    @elseif ($item->section->key == 'services-section')
+        @include('frontend.partials.components.service-section')
+    @elseif ($item->section->key == 'menu-banner-section')
+        @include('frontend.partials.components.menu-banner-section')
+    @elseif ($item->section->key == 'category-wise-item')
+        @include('frontend.partials.components.menu-item-section')
+    @elseif ($item->section->key == 'reservation-section')
+        @include('frontend.partials.components.reservation-section')
+    @elseif ($item->section->key == 'reservation-item')
+        @include('frontend.partials.components.reservation-item-section')
+    @elseif ($item->section->key == 'trusted-brand-section')
+        @include('frontend.partials.components.trusted-brand-section')
+    @endif
+@endforeach
 
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    End reservation details
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<section class="reservation-section">
-    <div class="container">
-        <div class="row">
-            <!-- 1. Event Reservation -->
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-4" data-aos="fade-right" data-aos-duration="1200">
-                <div class="reservation-card">
-                    <div class="reservation-image">
-                        <img src="{{ asset('public/frontend') }}/images/reservations/event-reservation.webp" alt="Event Reservation">
-                    </div>
-                    <div class="reservation-card-header">
-                        <div class="reservation-price">$24.99</div>
-                        <span class="reservation-status available">Available</span>
-                    </div>
-                    <div class="reservation-card-content">
-                        <h3 class="reservation-item-name">Event Reservation</h3>
-                        <p class="reservation-item-stats"><i class="fa-solid fa-star"></i> 4.9 (312 Services Taken)</p>
-                        <p class="reservation-item-description">Fast and flexible servation options for public, private, or themed events anytime & any where.</p>
-                    </div>
-                    <button class="btn--base" type="button" class="trigger-btn" data-bs-toggle="modal" data-bs-target="#reservationModal">
-                        Book Now
-                    </button>
-                </div>
-            </div>
-
-            <!-- 2. Function Hall Reservation -->
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-4" data-aos="fade-right" data-aos-duration="1200">
-                <div class="reservation-card">
-                    <div class="reservation-image">
-                        <img src="{{ asset('public/frontend') }}/images/reservations/wdding-hall.webp" alt="Function Hall Reservation">
-                    </div>
-                    <div class="reservation-card-header">
-                        <div class="reservation-price">$32.99</div>
-                        <span class="reservation-status available">Available</span>
-                    </div>
-                    <div class="reservation-card-content">
-                        <h3 class="reservation-item-name">Function Hall Reservation</h3>
-                        <p class="reservation-item-stats"><i class="fa-solid fa-star"></i> 4.8 (229 Services Taken)</p>
-                        <p class="reservation-item-description">Secure the perfect venue for your next function with quick hall servation support to make your event remarkable.</p>
-                    </div>
-                    <button class="btn--base" type="button" class="trigger-btn" data-bs-toggle="modal" data-bs-target="#reservationModal">
-                        Book Now
-                    </button>
-                </div>
-            </div>
-
-            <!-- 3. VIP Dining Slot -->
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-4" data-aos="fade-left" data-aos-duration="1200">
-                <div class="reservation-card">
-                    <div class="reservation-image">
-                        <img src="{{ asset('public/frontend') }}/images/reservations/vip-dining-sliot.webp" alt="VIP Dining Slot">
-                    </div>
-                    <div class="reservation-card-header">
-                        <div class="reservation-price">$45.99</div>
-                        <span class="reservation-status available">Available</span>
-                    </div>
-                    <div class="reservation-card-content">
-                        <h3 class="reservation-item-name">VIP Dining Slot</h3>
-                        <p class="reservation-item-stats"><i class="fa-solid fa-star"></i> 4.9 (172 Services Taken)</p>
-                        <p class="reservation-item-description">Exclusive servation experience with privacy, luxury, and personalized service included.</p>
-                    </div>
-                    <button class="btn--base" type="button" class="trigger-btn" data-bs-toggle="modal" data-bs-target="#reservationModal">
-                        Book Now
-                    </button>
-                </div>
-            </div>
-
-            <!-- 4. Outdoor Event Booking -->
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-4" data-aos="fade-left" data-aos-duration="1200">
-                <div class="reservation-card">
-                    <div class="reservation-image">
-                        <img src="{{ asset('public/frontend') }}/images/reservations/outdoor-event.webp" alt="Outdoor Event Booking">
-                    </div>
-                    <div class="reservation-card-header">
-                        <div class="reservation-price">$28.99</div>
-                        <span class="reservation-status not-available">Unavailable</span>
-                    </div>
-                    <div class="reservation-card-content">
-                        <h3 class="reservation-item-name">Outdoor Event Booking</h3>
-                        <p class="reservation-item-stats"><i class="fa-solid fa-star"></i> 4.7 (198 Services Taken)</p>
-                        <p class="reservation-item-description">Arrange open-air servations with scenic backdrops and stress-free planning options.These could be best choice.</p>
-                    </div>
-                    <button class="btn--base"   data-bs-toggle="modal" data-bs-target="#reservationModal">
-                        Book Now
-                    </button>
-                </div>
-            </div>
-            <!-- 1. Event Reservation -->
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-4" data-aos="fade-right" data-aos-duration="1200">
-                <div class="reservation-card">
-                    <div class="reservation-image">
-                        <img src="{{ asset('public/frontend') }}/images/reservations/event-reservation.webp" alt="Event Reservation">
-                    </div>
-                    <div class="reservation-card-header">
-                        <div class="reservation-price">$24.99</div>
-                        <span class="reservation-status available">Available</span>
-                    </div>
-                    <div class="reservation-card-content">
-                        <h3 class="reservation-item-name">Event Reservation</h3>
-                        <p class="reservation-item-stats"><i class="fa-solid fa-star"></i> 4.9 (312 Services Taken)</p>
-                        <p class="reservation-item-description">Fast and flexible servation options for public, private, or themed events anytime & any where.</p>
-                    </div>
-                    <button class="btn--base" type="button" class="trigger-btn" data-bs-toggle="modal" data-bs-target="#reservationModal">
-                        Book Now
-                    </button>
-                </div>
-            </div>
-
-            <!-- 2. Function Hall Reservation -->
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-4" data-aos="fade-right" data-aos-duration="1200">
-                <div class="reservation-card">
-                    <div class="reservation-image">
-                        <img src="{{ asset('public/frontend') }}/images/reservations/wdding-hall.webp" alt="Function Hall Reservation">
-                    </div>
-                    <div class="reservation-card-header">
-                        <div class="reservation-price">$32.99</div>
-                        <span class="reservation-status available">Available</span>
-                    </div>
-                    <div class="reservation-card-content">
-                        <h3 class="reservation-item-name">Function Hall Reservation</h3>
-                        <p class="reservation-item-stats"><i class="fa-solid fa-star"></i> 4.8 (229 Services Taken)</p>
-                        <p class="reservation-item-description">Secure the perfect venue for your next function with quick hall servation support to make your event remarkable.</p>
-                    </div>
-                    <button class="btn--base" type="button" class="trigger-btn" data-bs-toggle="modal" data-bs-target="#reservationModal">
-                        Book Now
-                    </button>
-                </div>
-            </div>
-
-            <!-- 3. VIP Dining Slot -->
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-4" data-aos="fade-left" data-aos-duration="1200">
-                <div class="reservation-card">
-                    <div class="reservation-image">
-                        <img src="{{ asset('public/frontend') }}/images/reservations/vip-dining-sliot.webp" alt="VIP Dining Slot">
-                    </div>
-                    <div class="reservation-card-header">
-                        <div class="reservation-price">$45.99</div>
-                        <span class="reservation-status available">Available</span>
-                    </div>
-                    <div class="reservation-card-content">
-                        <h3 class="reservation-item-name">VIP Dining Slot</h3>
-                        <p class="reservation-item-stats"><i class="fa-solid fa-star"></i> 4.9 (172 Services Taken)</p>
-                        <p class="reservation-item-description">Exclusive servation experience with privacy, luxury, and personalized service included.</p>
-                    </div>
-                    <button class="btn--base" type="button" class="trigger-btn" data-bs-toggle="modal" data-bs-target="#reservationModal">
-                        Book Now
-                    </button>
-                </div>
-            </div>
-
-            <!-- 4. Outdoor Event Booking -->
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-4" data-aos="fade-left" data-aos-duration="1200">
-                <div class="reservation-card">
-                    <div class="reservation-image">
-                        <img src="{{ asset('public/frontend') }}/images/reservations/outdoor-event.webp" alt="Outdoor Event Booking">
-                    </div>
-                    <div class="reservation-card-header">
-                        <div class="reservation-price">$28.99</div>
-                        <span class="reservation-status not-available">Unavailable</span>
-                    </div>
-                    <div class="reservation-card-content">
-                        <h3 class="reservation-item-name">Outdoor Event Booking</h3>
-                        <p class="reservation-item-stats"><i class="fa-solid fa-star"></i> 4.7 (198 Services Taken)</p>
-                        <p class="reservation-item-description">Arrange open-air servations with scenic backdrops and stress-free planning options.These could be best choice.</p>
-                    </div>
-                    <button class="btn--base"   data-bs-toggle="modal" data-bs-target="#reservationModal">
-                        Book Now
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    End reservation details
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-<section class="trust-gained-section section-padding">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6 col-10">
-                <div class="section-header text-center">
-                    <h2 class="section-title">Trusted by Leading <span>Brands</span> </h2>
-                    <p class="section-subtitle">We're proud to work with industry leaders</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-12">
-                <div class="row align-items-center justify-content-center">
-                    <!-- Brand Logo 1 -->
-                    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-4 ">
-                        <div class="brand-card">
-                            <a href="#" class="brand-logo-link">
-                                <img src="{{ asset('public/frontend') }}/images/brands/bandai_871362.png" alt="Brand 1" class="brand-logo">
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Brand Logo 2 -->
-                    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-4 ">
-                        <div class="brand-card">
-                            <a href="#" class="brand-logo-link">
-                                <img src="{{ asset('public/frontend') }}/images/brands/bebo_3670268.png" alt="Brand 2" class="brand-logo">
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Brand Logo 3 -->
-                    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-4 ">
-                        <div class="brand-card">
-                            <a href="#" class="brand-logo-link">
-                                <img src="{{ asset('public/frontend') }}/images/brands/bravo_18388809.png" alt="Brand 3" class="brand-logo">
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Brand Logo 4 -->
-                    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-4 ">
-                        <div class="brand-card">
-                            <a href="#" class="brand-logo-link">
-                                <img src="assets/images/brands/bridgestone_5977577.png" alt="Brand 4" class="brand-logo">
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Brand Logo 5 -->
-                    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-4 ">
-                        <div class="brand-card">
-                            <a href="#" class="brand-logo-link">
-                                <img src="assets/images/brands/habbo_4926557.png" alt="Brand 5" class="brand-logo">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Brand Logo 1 -->
-                    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-4 ">
-                        <div class="brand-card">
-                            <a href="#" class="brand-logo-link">
-                                <img src="assets/images/brands/bandai_871362.png" alt="Brand 1" class="brand-logo">
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Brand Logo 2 -->
-                    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-4 ">
-                        <div class="brand-card">
-                            <a href="#" class="brand-logo-link">
-                                <img src="assets/images/brands/bebo_3670268.png" alt="Brand 2" class="brand-logo">
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Brand Logo 3 -->
-                    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-4 ">
-                        <div class="brand-card">
-                            <a href="#" class="brand-logo-link">
-                                <img src="assets/images/brands/bravo_18388809.png" alt="Brand 3" class="brand-logo">
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Brand Logo 4 -->
-                    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-4 ">
-                        <div class="brand-card">
-                            <a href="#" class="brand-logo-link">
-                                <img src="assets/images/brands/bridgestone_5977577.png" alt="Brand 4" class="brand-logo">
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Brand Logo 5 -->
-                    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-4 ">
-                        <div class="brand-card">
-                            <a href="#" class="brand-logo-link">
-                                <img src="assets/images/brands/habbo_4926557.png" alt="Brand 5" class="brand-logo">
-                            </a>
-                        </div>
-                    </div>
-
-
-
-                    <!-- Continue for brand9 to brand16 with same structure -->
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-</section>
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Reservation Modal
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
@@ -466,11 +171,8 @@
         </div>
     </div>
 </div>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Reservation Modal
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-@include('frontend.partials.components.marketing-section')
+
 
 
 @endsection

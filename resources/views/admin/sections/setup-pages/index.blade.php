@@ -39,7 +39,6 @@
                                 <td>{{ $item->title }}</td>
                                 <td>
                                     @if ($item->slug == 'home')
-
                                     @else
                                         @include('admin.components.form.switcher',[
                                             'name'          => 'status',
@@ -52,12 +51,19 @@
                                     @endif
                                 </td>
                                 <td>
-                                    @if ($item->slug == 'home')
+                                    {{-- @if ($item->slug == 'home')
 
-                                    @else
+                                    @else --}}
                                         <a href="{{ setRoute('admin.setup.pages.details',$item->slug) }}" class="btn btn--base"><i class="las la-eye"></i></a>
-                                    @endif
+                                    {{-- @endif --}}
                                 </td>
+                                {{-- <td>
+                                    @if (in_array($item->slug, ['home','gallery','blogs','contact']))
+                                        <a href="{{ setRoute('admin.setup.pages.details', $item->slug) }}" class="btn btn--base">
+                                            <i class="las la-eye"></i>
+                                        </a>
+                                    @endif
+                                </td> --}}
                             </tr>
                         @empty
                             @include('admin.components.alerts.empty',['colspan' => 2])

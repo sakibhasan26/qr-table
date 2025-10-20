@@ -19,6 +19,7 @@ use Database\Seeders\Admin\SiteSectionsSeeder;
 use Database\Seeders\Admin\BasicSettingsSeeder;
 use Database\Seeders\Admin\EmailTemplateSeeder;
 use Database\Seeders\Admin\PaymentGatewaySeeder;
+use Database\Seeders\Admin\SectionHasPageSeeder;
 use Database\Seeders\Admin\SocialAuthDriverSeeder;
 use Database\Seeders\Admin\TransactionSettingSeeder;
 
@@ -50,6 +51,7 @@ class DatabaseSeeder extends Seeder
             PaymentGatewaySeeder::class,
             SocialAuthDriverSeeder::class,
             EmailTemplateSeeder::class,
+            SectionHasPageSeeder::class,
         ]);
     }
 }

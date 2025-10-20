@@ -10,8 +10,8 @@
             <div class="container">
                 <div class="header-menu-content">
                     <nav class="navbar navbar-expand-lg p-0">
-                        <a class="site-logo site-title" href="index.html">
-                            <img src="{{ asset('public/frontend') }}/images/logo/logo-colorful.png" alt="site-logo">
+                        <a class="site-logo site-title" href="{{ route('frontend.index') }}">
+                            <img src="{{ get_logo($basic_settings) }}" data-white_img="{{ get_logo($basic_settings,'white') }}" data-dark_img="{{ get_logo($basic_settings,'dark') }}" alt="site-logo">
                         </a>
 
                         <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"

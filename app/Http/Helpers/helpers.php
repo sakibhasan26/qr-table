@@ -435,6 +435,9 @@ function files_path($slug)
         'sms-provider'    => [
             'path'              => 'backend/images/sms-provider',
         ],
+        'dishes'    => [
+            'path'              => 'backend/images/dishes',
+        ],
     ];
 
     return (object) $data[$slug];

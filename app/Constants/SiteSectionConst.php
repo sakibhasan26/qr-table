@@ -7,6 +7,7 @@ class SiteSectionConst{
     const BANNER_SECTION            = "Banner Section";
     const MENU_BANNER_SECTION       = "Menu Banner Section";
     const BRAND_SECTION             = "Brand Section";
+    const DISCOVER_SECTION          = "Discover Section";
     const POPULAR_SECTION           = "Popular Section";
     const WHAT_WE_SERVE_SECTION     = "What We Serve Section";
     const LOGIN_SECTION             = "Login Section";
@@ -21,19 +22,31 @@ class SiteSectionConst{
     const SERVICES_SECTION          = "Services Section";
     const FEATURE_SECTION           = "Feature Section";
     const CLIENT_FEEDBACK_SECTION   = "Client Feedback Section";
-    const ANNOUNCEMENT_SECTION      = "Announcement Section";
-    const HOW_IT_WORK_SECTION       = "How It Work";
     const FOOTER_SECTION            = "Footer Section";
     const ABOUT_PAGE_SECTION        = "About Page Section";
     const CONTACT_US_SECTION        = "Contact Us Section";
 
 
 
+    const NOT_DISPLAY_COOKIE_SECTION          = "site-cookie";
+    const NOT_DISPLAY_LOGIN_SECTION           = "login-section";
+    const NOT_DISPLAY_REGISTER_SECTION        = "register-section";
+    const NOT_DISPLAY_FOOTER_SECTION          = "footer-section";
+    const NOT_DISPLAY_BREADCRUMB_SECTION      = "breadcrumb-section";
+    const NOT_DISPLAY_FORGET_PASSWORD_SECTION = "forget-password-section";
+    const NOT_DISPLAY_RESET_PASSWORD_SECTION  = "reset-password-section";
+    const NOT_DISPLAY_ABOUT_SECTION           = "about-section";
 
-    const SOLUTIONS_SECTION         = "Solutions Section";
-    const MONITORING_SECTION        = "Monitoring Section";
-    const BEST_ITEM_SECTION         = "Best Item Section";
-    const LATEST_ITEM_SECTION       = "Latest Item Section";
-    const GLANCE_SECTION            = "Glance Section";
-    const INTRO_SECTION             = "Intro Section";
+    public static function notDisplaySections(): array{
+        return [
+            self::NOT_DISPLAY_COOKIE_SECTION,
+            self::NOT_DISPLAY_LOGIN_SECTION,
+            self::NOT_DISPLAY_REGISTER_SECTION,
+            self::NOT_DISPLAY_FOOTER_SECTION,
+            self::NOT_DISPLAY_BREADCRUMB_SECTION,
+            self::NOT_DISPLAY_FORGET_PASSWORD_SECTION,
+            self::NOT_DISPLAY_RESET_PASSWORD_SECTION,
+            self::NOT_DISPLAY_ABOUT_SECTION,
+        ];
+    }
 }

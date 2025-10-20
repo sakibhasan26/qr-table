@@ -53,6 +53,16 @@
                             'title'     => "Contact Messages",
                             'route'     => "admin.contact.messages.index",
                             'icon'      => "menu-icon las la-sms",
+                        ],
+                        [
+                            'title'     => "Category",
+                            'route'     => "admin.category.index",
+                            'icon'      => "menu-icon las la-bars",
+            ],
+                        [
+                            'title'     => "Dishes Item",
+                            'route'     => "admin.dishes.index",
+                            'icon'      => "menu-icon las la-utensils",
                         ]
                     ]
                 ])
@@ -277,6 +287,7 @@
                             setRoute('admin.setup.sections.section','banner'),
                             setRoute('admin.setup.sections.section','menu-banner'),
                             setRoute('admin.setup.sections.section','brand'),
+                            setRoute('admin.setup.sections.section','discover'),
                             setRoute('admin.setup.sections.section','popular'),
                             setRoute('admin.setup.sections.section','what-we-serve'),
                             setRoute('admin.setup.sections.section','gallery'),
@@ -318,6 +329,10 @@
                                     <i class="menu-icon las la-ellipsis-h"></i>
                                     <span class="menu-title">{{ __("Brand Section") }}</span>
                                 </a>
+                                <a href="{{ setRoute('admin.setup.sections.section','discover') }}" class="nav-link @if ($current_url == setRoute('admin.setup.sections.section','discover')) active @endif">
+                                    <i class="menu-icon las la-ellipsis-h"></i>
+                                    <span class="menu-title">{{ __("Discover Section") }}</span>
+                                </a>
                                 <a href="{{ setRoute('admin.setup.sections.section','popular') }}" class="nav-link @if ($current_url == setRoute('admin.setup.sections.section','popular')) active @endif">
                                     <i class="menu-icon las la-ellipsis-h"></i>
                                     <span class="menu-title">{{ __("Popular Section") }}</span>
@@ -358,15 +373,6 @@
                                     <i class="menu-icon las la-ellipsis-h"></i>
                                     <span class="menu-title">{{ __("Feature Section") }}</span>
                                 </a>
-
-                                {{-- <a href="{{ setRoute('admin.setup.sections.section','announcement') }}" class="nav-link @if ($current_url == setRoute('admin.setup.sections.section','announcement')) active @endif">
-                                    <i class="menu-icon las la-ellipsis-h"></i>
-                                    <span class="menu-title">{{ __("Announcements") }}</span>
-                                </a> --}}
-                                {{-- <a href="{{ setRoute('admin.setup.sections.section','how-it-work') }}" class="nav-link @if ($current_url == setRoute('admin.setup.sections.section','how-it-work')) active @endif">
-                                    <i class="menu-icon las la-ellipsis-h"></i>
-                                    <span class="menu-title">{{ __("How It Work Section") }}</span>
-                                </a> --}}
                                 <a href="{{ setRoute('admin.setup.sections.section','about-page') }}" class="nav-link @if ($current_url == setRoute('admin.setup.sections.section','about-page')) active @endif">
                                     <i class="menu-icon las la-ellipsis-h"></i>
                                     <span class="menu-title">{{ __("About Page Section") }}</span>

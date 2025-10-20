@@ -1,14 +1,14 @@
 @php
     $section_slug = Illuminate\Support\Str::slug(App\Constants\SiteSectionConst::CLIENT_FEEDBACK_SECTION);
     $feedback = App\Models\Admin\SiteSections::getData($section_slug)->first();
-    $tagline = preg_replace('/\[(.*?)\]/', '<span class="color--base">$1</span>', e(@$feedback?->value?->language?->$Select_lang->heading ?? @$feedback?->value?->language?->$default_lang->heading ?? ''));
+    $tagline = preg_replace('/\[(.*?)\]/', '<span class="color--base">$1</span>', e(@$feedback?->value?->language?->$select_lang->heading ?? @$feedback?->value?->language?->$default_lang->heading ?? ''));
 @endphp
 <section class="testimonial-section ptb-100 ">
     <div class="container">
         <div class="section-header">
             <div class="section-subtitle">
                 <i class="fas fa-utensil-spoon left-icon"></i>
-                <span>{{ @$feedback?->value?->language?->$Select_lang->title ?? @$feedback?->value?->language?->$default_lang->title }}</span>
+                <span>{{ @$feedback?->value?->language?->$select_lang->title ?? @$feedback?->value?->language?->$default_lang->title }}</span>
                 <i class="fas fa-wine-glass-alt right-icon"></i>
             </div>
 
@@ -17,7 +17,7 @@
             </h2>
 
             <p class="section-description">
-                {{ @$feedback?->value?->language?->$Select_lang->sub_heading ?? @$feedback?->value?->language?->$default_lang->sub_heading }}
+                {{ @$feedback?->value?->language?->$select_lang->sub_heading ?? @$feedback?->value?->language?->$default_lang->sub_heading }}
             </p>
         </div>
 

@@ -7,8 +7,10 @@ use Illuminate\Support\Facades\Artisan;
 use App\Providers\Admin\BasicSettingsProvider;
 use Pusher\PushNotifications\PushNotifications;
 use App\Http\Controllers\Admin\CookieController;
+use App\Http\Controllers\Admin\DishesController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\AddMoneyController;
+use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\CurrencyController;
 use App\Http\Controllers\Admin\LanguageController;
 use App\Http\Controllers\Admin\MoneyOutController;
@@ -98,6 +100,34 @@ Route::name('admin.')->group(function () {
             Route::post('bulk-status-enable','bulkStatusEnable')->name('bulk.status.enable');
             Route::post('bulk-status-disable','bulkStatusDisable')->name('bulk.status.disable');
         });
+
+        // Setup Currency Section
+        Route::controller(CategoryController::class)->prefix('category')->name('category.')->group(function () {
+            Route::get('index', 'index')->name('index');
+            Route::post('store', 'store')->name('store');
+            Route::put('status/update', 'statusUpdate')->name('status.update');
+            Route::put('update', 'update')->name('update');
+            Route::delete('delete','delete')->name('delete');
+        });
+
+        // Setup Currency Section
+        Route::controller(DishesController::class)->prefix('dishes')->name('dishes.')->group(function () {
+            Route::get('index', 'index')->name('index');
+            Route::get('create', 'create')->name('create');
+            Route::post('store', 'store')->name('store');
+            Route::put('status/update', 'statusUpdate')->name('status.update');
+            Route::get('edit/{id}', 'edit')->name('edit');
+            Route::put('update', 'update')->name('update');
+            Route::delete('delete','delete')->name('delete');
+        });
+
+
+
+
+
+
+
+
 
         // Fees & Charges Section
         Route::controller(TrxSettingsController::class)->prefix('trx-settings')->name('trx.settings.')->group(function () {

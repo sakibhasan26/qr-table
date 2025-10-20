@@ -29,8 +29,10 @@ class IndexController extends Controller
     public function index(BasicSettingsProvider $basic_settings)
     {
         $page_title = $basic_settings->get()?->site_name . " | " . $basic_settings->get()?->site_title;
-
-        return view('frontend.index',compact('page_title'));
+        $page_section  = SetupPage::where('slug','home')->with(['sections' => function($q){
+            $q->where('status',true);
+        }])->first();
+        return view('frontend.index',compact('page_title','page_section'));
     }
 
     /**
@@ -40,10 +42,9 @@ class IndexController extends Controller
 
     public function contact(){
         $page_title         = __("Contact Page");
-        $page_section       = SetupPage::where('slug','about')->with(['sections' => function($q){
+        $page_section       = SetupPage::where('slug','contact')->with(['sections' => function($q){
             $q->where('status',true);
         }])->first();
-
         return view('frontend.pages.contact',compact('page_title','page_section'));
     }
 
@@ -51,10 +52,9 @@ class IndexController extends Controller
 
     public function menu(){
         $page_title         = __("Menu Page");
-        $page_section       = SetupPage::where('slug','about')->with(['sections' => function($q){
+        $page_section       = SetupPage::where('slug','menu')->with(['sections' => function($q){
             $q->where('status',true);
         }])->first();
-
         return view('frontend.pages.menu',compact('page_title','page_section'));
     }
 
@@ -62,11 +62,20 @@ class IndexController extends Controller
 
     public function reservation(){
         $page_title         = __("Reservation Page");
-        $page_section       = SetupPage::where('slug','about')->with(['sections' => function($q){
+        $page_section       = SetupPage::where('slug','reservation')->with(['sections' => function($q){
             $q->where('status',true);
         }])->first();
 
         return view('frontend.pages.reservation',compact('page_title','page_section'));
+    }
+
+
+    public function search(Request $request) {
+
+        // dd($request->all(),Request::all());
+        $page_title         = __("Search Page");
+
+        return view('frontend.pages.search',compact('page_title'));
     }
 
 
@@ -85,28 +94,26 @@ class IndexController extends Controller
                 'created_at'    => now(),
             ]);
         }catch(Exception $e) {
-            return redirect('/#subscribe-form')->with(['error' => ['Failed to subscribe. Try again']]);
+            return redirect('/#subscribe-form')->with(['error' => [__('Failed to subscribe. Try again')]]);
         }
 
-        return redirect(url()->previous() .'/#subscribe-form')->with(['success' => ['Subscription successful!']]);
+        return redirect(url()->previous() .'/#subscribe-form')->with(['success' => [__('Subscription successful!')]]);
     }
 
     public function contactMessageSend(Request $request) {
-
         $validated = Validator::make($request->all(),[
             'name'      => "required|string|max:255",
             'email'     => "required|email|string|max:255",
-            'phone'     => "required|string|max:255",
             'message'   => "required|string|max:5000",
         ])->validate();
 
         try{
             ContactRequest::create($validated);
         }catch(Exception $e) {
-            return back()->with(['error' => ['Failed to send message. Please Try again']]);
+            return back()->with(['error' => [__('Failed to send message. Please Try again')]]);
         }
 
-        return back()->with(['success' => ['Message send successfully!']]);
+        return back()->with(['success' => [__('Message send successfully!')]]);
     }
 
     public function usefulLink($slug) {

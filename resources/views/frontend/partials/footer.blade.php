@@ -1,5 +1,5 @@
 @php
-    $Select_lang = selectedLang();
+    $select_lang = selectedLang();
     $default_lang = system_default_lang();
     $section_slug = Illuminate\Support\Str::slug(App\Constants\SiteSectionConst::FOOTER_SECTION);
     $footer = App\Models\Admin\SiteSections::getData($section_slug)->first();
@@ -12,28 +12,28 @@
             <div class="row">
                 <div class="col-xl-4 col-md-4 mb-4">
                     <div class="single-cta">
-                        <i class="{{ @$footer?->value?->contact?->language?->$Select_lang->address_icon ?? @$footer?->value?->contact?->language?->$default_lang->address_icon }}"></i>
+                        <i class="{{ @$footer?->value?->contact?->language?->$select_lang->address_icon ?? @$footer?->value?->contact?->language?->$default_lang->address_icon }}"></i>
                         <div class="cta-text">
-                            <h4>{{ @$footer?->value?->contact?->language?->$Select_lang->address ?? @$footer?->value?->contact?->language?->$default_lang->address }}</h4>
-                            <span>{{ @$footer?->value?->contact?->language?->$Select_lang->address_title ?? @$footer?->value?->contact?->language?->$default_lang->address_title }}</span>
+                            <h4>{{ @$footer?->value?->contact?->language?->$select_lang->address ?? @$footer?->value?->contact?->language?->$default_lang->address }}</h4>
+                            <span>{{ @$footer?->value?->contact?->language?->$select_lang->address_title ?? @$footer?->value?->contact?->language?->$default_lang->address_title }}</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-4 mb-4">
                     <div class="single-cta">
-                        <i class="{{ @$footer?->value?->contact?->language?->$Select_lang->phone_icon ?? @$footer?->value?->contact?->language?->$default_lang->phone_icon }}"></i>
+                        <i class="{{ @$footer?->value?->contact?->language?->$select_lang->phone_icon ?? @$footer?->value?->contact?->language?->$default_lang->phone_icon }}"></i>
                         <div class="cta-text">
-                            <h4>{{ @$footer?->value?->contact?->language?->$Select_lang->phone ?? @$footer?->value?->contact?->language?->$default_lang->phone }}</h4>
-                            <span>{{ @$footer?->value?->contact?->language?->$Select_lang->phone_title ?? @$footer?->value?->contact?->language?->$default_lang->phone_title }}</span>
+                            <h4>{{ @$footer?->value?->contact?->language?->$select_lang->phone ?? @$footer?->value?->contact?->language?->$default_lang->phone }}</h4>
+                            <span>{{ @$footer?->value?->contact?->language?->$select_lang->phone_title ?? @$footer?->value?->contact?->language?->$default_lang->phone_title }}</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-4 mb-4">
                     <div class="single-cta">
-                        <i class="{{ @$footer?->value?->contact?->language?->$Select_lang->email_icon ?? @$footer?->value?->contact?->language?->$default_lang->address_icon }}"></i>
+                        <i class="{{ @$footer?->value?->contact?->language?->$select_lang->email_icon ?? @$footer?->value?->contact?->language?->$default_lang->address_icon }}"></i>
                         <div class="cta-text">
-                            <h4>{{ @$footer?->value?->contact?->language?->$Select_lang->email ?? @$footer?->value?->contact?->language?->$default_lang->email }}</h4>
-                            <span>{{ @$footer?->value?->contact?->language?->$Select_lang->email_title ?? @$footer?->value?->contact?->language?->$default_lang->email_title }}</span>
+                            <h4>{{ @$footer?->value?->contact?->language?->$select_lang->email ?? @$footer?->value?->contact?->language?->$default_lang->email }}</h4>
+                            <span>{{ @$footer?->value?->contact?->language?->$select_lang->email_title ?? @$footer?->value?->contact?->language?->$default_lang->email_title }}</span>
                         </div>
                     </div>
                 </div>
@@ -44,15 +44,17 @@
                 <div class="col-xl-5 col-lg-5 mb-5">
                     <div class="footer-widget">
                         <div class="footer-logo">
-                            <a href="index.html">
-                                <img src="{{ asset('public/frontend') }}/images/logo/logo-hm-png-tp.png" class="img-fluid" alt="logo">
+                            <a href="{{ route('frontend.index') }}">
+                                {{-- <img src="{{ asset('public/frontend') }}/images/logo/logo-hm-png-tp.png" class="img-fluid" alt="logo"> --}}
+                                <img src="{{ get_logo($basic_settings) }}" data-white_img="{{ get_logo($basic_settings,'white') }}" data-dark_img="{{ get_logo($basic_settings,'dark') }}" class="img-fluid" alt="site-logo">
+
                             </a>
                         </div>
                         <div class="footer-text">
-                            <p>{{ @$footer?->value?->contact?->language?->$Select_lang->contact_desc ?? @$footer?->value?->contact?->language?->$default_lang->contact_desc }}</p>
+                            <p>{{ @$footer?->value?->contact?->language?->$select_lang->contact_desc ?? @$footer?->value?->contact?->language?->$default_lang->contact_desc }}</p>
                         </div>
                         <div class="footer-social-icon">
-                            <span>{{ @$footer?->value?->contact?->language?->$Select_lang->contact_heading ?? @$footer?->value?->contact?->language?->$default_lang->contact_heading }}</span>
+                            <span>{{ @$footer?->value?->contact?->language?->$select_lang->contact_heading ?? @$footer?->value?->contact?->language?->$default_lang->contact_heading }}</span>
                             <div class="social-links">
                                 @forelse ($footer?->value?->contact?->social_links ?? [] as $item)
                                     <a href="{{ @$item->link }}" class="social-link">
@@ -84,11 +86,12 @@
                             <h3>{{ __('Subscribe') }}</h3>
                         </div>
                         <div class="footer-text mb-4">
-                            <p>{{ @$footer?->value?->contact?->language?->$Select_lang->subcribe_text ?? @$footer?->value?->contact?->language?->$default_lang->subcribe_text }}</p>
+                            <p>{{ @$footer?->value?->contact?->language?->$select_lang->subcribe_text ?? @$footer?->value?->contact?->language?->$default_lang->subcribe_text }}</p>
                         </div>
                         <div class="subscribe-form">
-                            <form action="#">
-                                <input type="email" placeholder="Email Address">
+                            <form action="{{ route('frontend.subscribe') }}" method="post">
+                                @csrf
+                                <input name="email" type="email" placeholder="{{ __('Email Address') }}">
                                 <button type="submit">
                                     <i class="fab fa-telegram-plane"></i>
                                 </button>
@@ -103,16 +106,17 @@
                 <div class="row align-items-center">
                     <div class="col-xl-6 col-lg-6 text-center text-lg-start">
                         <div class="copyright-text">
-                            <p>Copyright &copy; 2024, All Right Reserved <a href="#">AppDevs</a></p>
+                            <p>{{ @$footer?->value?->contact?->language?->$select_lang->copyright_text ?? @$footer?->value?->contact?->language?->$default_lang->copyright_text }}</p>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 text-center text-lg-end">
                         <div class="footer-menu">
                             <ul>
-                                <li><a href="#">Privacy</a></li>
-                                <li><a href="#">Terms</a></li>
-                                <li><a href="#">Policy</a></li>
-                                <li><a href="#">Contact</a></li>
+                                @foreach ($useful_link as $key=> $data)
+                                    <li><a href="{{ route('frontend.useful.link',$data->slug) }}">{{ @$data->title->language->$default->title ?? $data->title->language->$default_lang->title }}</a></li>
+                                @endforeach
+
+
                             </ul>
                         </div>
                     </div>

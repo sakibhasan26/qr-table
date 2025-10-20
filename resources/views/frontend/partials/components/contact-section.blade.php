@@ -1,3 +1,8 @@
+@php
+    $section_slug = Illuminate\Support\Str::slug(App\Constants\SiteSectionConst::CONTACT_US_SECTION);
+    $contact = App\Models\Admin\SiteSections::getData($section_slug)->first();
+    $tagline = preg_replace('/\[(.*?)\]/', '<span class="color--base">$1</span>', e(@$contact?->value?->language?->$select_lang->heading ?? $contact?->value?->language?->$default_lang->heading ?? ''));
+@endphp
 <section class="contact-section">
     <div class="container">
         <div class="row">
@@ -9,40 +14,39 @@
                                 <div class="contact-field">
                                     <div class="section-header">
                                         <h2 class="section-title">
-                                            Crafted with <span>Passion</span>, Served with Perfection
+                                            {!! @$tagline !!}
                                         </h2>
                                     </div>
-                                    <p>Feel Free to contact us any time. We will get back to you as soon as we can!</p>
-                                    <input type="text" class="form-control form-group" placeholder="Name" />
-                                    <input type="text" class="form-control form-group" placeholder="Email" />
-                                    <textarea class="form-control form-group" placeholder="Message"></textarea>
-                                    <button class=" btn--base w-100  ">Send</button>
+                                    <p>{{ @$contact?->value?->language?->$select_lang->sub_heading ?? $contact?->value?->language?->$default_lang->sub_heading }}</p>
+                                    <form action="{{ route('frontend.contact.message.send') }}" method="post">
+                                        @csrf
+                                        <input name="name" type="text" class="form-control form-group" placeholder="{{ __('Name') }}" />
+                                        <input name="email" type="text" class="form-control form-group" placeholder="{{ __('Email') }}" />
+                                        <textarea name="message" class="form-control form-group" placeholder="{{ __('Message') }}"></textarea>
+                                        <button class=" btn--base w-100 "> {{ __('Send') }} </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-2">
                             <div class="right-contact-social-icon d-flex ">
-                                <div class="social-item-inner d-flex flex-wrap justify-content-center">
-                                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                </div>
+
                             </div>
                         </div>
                     </div>
                     <div class="contact-info-sec">
-                        <h4>Contact Info</h4>
+                        <h4>{{ @$contact?->value?->language?->$select_lang->info_title ?? $contact?->value?->language?->$default_lang->info_title }}</h4>
                         <div class="d-flex info-single align-items-start">
-                            <i class="fas fa-headset"></i>
-                            <span>+91 8009 054294</span>
+                            <i class="{{ @$contact?->value?->language?->$select_lang->phone_icon ?? $contact?->value?->language?->$default_lang->phone_icon }}"></i>
+                            <span>{{ @$contact?->value?->language?->$select_lang->phone ?? $contact?->value?->language?->$default_lang->phone }}</span>
                         </div>
                         <div class="d-flex info-single align-items-start">
-                            <i class="fas fa-envelope-open-text"></i>
-                            <span>info@flightmantra.com</span>
+                            <i class="{{ @$contact?->value?->language?->$select_lang->email_icon ?? $contact?->value?->language?->$default_lang->email_icon }}"></i>
+                            <span>{{ @$contact?->value?->language?->$select_lang->email ?? $contact?->value?->language?->$default_lang->email }}</span>
                         </div>
                         <div class="d-flex info-single align-items-start">
-                            <i class="fas fa-map-marked-alt"></i>
-                            <span>1000+ Travel partners and 65+ Service city across India, USA, Canada & UAE</span>
+                            <i class="{{ @$contact?->value?->language?->$select_lang->location_icon ?? $contact?->value?->language?->$default_lang->location_icon }}"></i>
+                            <span>{{ @$contact?->value?->language?->$select_lang->location ?? $contact?->value?->language?->$default_lang->location }}</span>
                         </div>
                     </div>
                 </div>

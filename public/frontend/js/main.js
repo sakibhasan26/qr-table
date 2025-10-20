@@ -264,7 +264,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function setActivePage() {
         const currentPage = window.location.pathname.split('/').pop();
         const navLinks = document.querySelectorAll('.main-menu .nav-link');
-        
+
         navLinks.forEach(link => {
             const linkPage = link.getAttribute('href');
             if (linkPage === currentPage || (currentPage === '' && linkPage === 'index.html')) {
@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function initMobileMenu() {
         const navbarToggler = document.querySelector('.navbar-toggler');
         const navbarCollapse = document.querySelector('.navbar-collapse');
-        
+
         if (navbarToggler && navbarCollapse) {
             navbarToggler.addEventListener('click', function() {
                 const isExpanded = this.getAttribute('aria-expanded') === 'true';
@@ -304,14 +304,14 @@ document.addEventListener('DOMContentLoaded', function() {
     initMobileMenu();
 });
 //___________________________________
-//__________  AOS CONTROL 
+//__________  AOS CONTROL
 //___________________________________
 document.addEventListener('DOMContentLoaded', function() {
     const body = document.body;
     body.removeAttribute('data-aos-easing');
     body.removeAttribute('data-aos-duration');
     body.removeAttribute('data-aos-delay');
-    
+
     // Or remove all data-aos attributes
     const attributes = body.getAttributeNames();
     attributes.forEach(attr => {
@@ -325,48 +325,48 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     // Get all dish cards
     const dishCards = document.querySelectorAll('.dish-card');
-    
+
     // Initialize each card
     dishCards.forEach(card => {
         // Skip sold out cards
         if (card.classList.contains('sold-out')) return;
-        
+
         const addToCartBtn = card.querySelector('.add-to-cart-btn');
         const quantityControls = card.querySelector('.quantity-controls');
         const minusBtn = card.querySelector('.minus-btn');
         const plusBtn = card.querySelector('.plus-btn');
         const quantityInput = card.querySelector('.qty-input');
-        
+
         // Add to Cart button click
         addToCartBtn.addEventListener('click', function() {
             addToCartBtn.style.display = 'none';
             quantityControls.style.display = 'flex';
         });
-        
+
         // Minus button click
         minusBtn.addEventListener('click', function() {
             let currentValue = parseInt(quantityInput.value) || 0;
             let newValue = Math.max(0, currentValue - 1);
             quantityInput.value = newValue;
-            
+
             if (newValue === 0) {
                 addToCartBtn.style.display = 'block';
                 quantityControls.style.display = 'none';
             }
         });
-        
+
         // Plus button click
         plusBtn.addEventListener('click', function() {
             let currentValue = parseInt(quantityInput.value) || 0;
             quantityInput.value = currentValue + 1;
         });
-        
+
         // Input change
         quantityInput.addEventListener('change', function() {
             let value = parseInt(quantityInput.value) || 0;
             value = Math.max(0, value);
             quantityInput.value = value;
-            
+
             if (value === 0) {
                 addToCartBtn.style.display = 'block';
                 quantityControls.style.display = 'none';
@@ -387,7 +387,7 @@ class TestimonialSlider {
         this.currentSlide = 0;
         this.cardsPerView = this.getCardsPerView();
         this.isAnimating = false;
-        
+
         this.init();
     }
 
@@ -401,12 +401,12 @@ class TestimonialSlider {
     init() {
         this.updateCardStates();
         this.attachEvents();
-        
+
         window.addEventListener('resize', () => {
             this.cardsPerView = this.getCardsPerView();
             this.updateSlider();
         });
-        
+
         // Auto slide
         setInterval(() => {
             this.nextSlide();
@@ -415,11 +415,11 @@ class TestimonialSlider {
 
     goToSlide(slideIndex) {
         if (this.isAnimating) return;
-        
+
         this.isAnimating = true;
         this.currentSlide = slideIndex;
         this.updateSlider();
-        
+
         setTimeout(() => {
             this.isAnimating = false;
         }, 600);
@@ -427,11 +427,11 @@ class TestimonialSlider {
 
     nextSlide() {
         if (this.isAnimating) return;
-        
+
         const totalSlides = this.bullets.length;
         this.currentSlide = (this.currentSlide + 1) % totalSlides;
         this.updateSlider();
-        
+
         this.isAnimating = true;
         setTimeout(() => {
             this.isAnimating = false;
@@ -442,12 +442,12 @@ class TestimonialSlider {
         const cardWidth = 100 / this.cardsPerView;
         const translateX = -this.currentSlide * cardWidth;
         this.track.style.transform = `translateX(${translateX}%)`;
-        
+
         // Update bullets
         this.bullets.forEach((bullet, index) => {
             bullet.classList.toggle('active', index === this.currentSlide);
         });
-        
+
         this.updateCardStates();
     }
 
@@ -455,7 +455,7 @@ class TestimonialSlider {
         this.cards.forEach((card, index) => {
             const startIndex = this.currentSlide * this.cardsPerView;
             const endIndex = startIndex + this.cardsPerView - 1;
-            
+
             if (index >= startIndex && index <= endIndex) {
                 card.classList.add('active');
             } else {
@@ -487,18 +487,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuNav = document.getElementById('menuNav');
     const navLinks = document.querySelectorAll('.menu-details-nav .nav-link');
     const categories = document.querySelectorAll('.menu-category');
-    
+
     // Check if elements exist to prevent errors
     if (!menuNav || navLinks.length === 0 || categories.length === 0) {
         return; // Exit if elements don't exist
     }
-    
+
     // Get the correct header height for offset
     function getHeaderHeight() {
         const header = document.querySelector('header');
         return header ? header.offsetHeight : 80;
     }
-    
+
     // Sticky navigation with offset
     window.addEventListener('scroll', function() {
         if (window.scrollY > 150) {
@@ -506,28 +506,28 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             menuNav.classList.remove('sticky');
         }
-        
+
         // Update active nav based on scroll position
         updateActiveNav();
     });
-    
+
     // Click navigation - Only for menu details nav links
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             // Only prevent default for menu navigation, not other links
             if (this.getAttribute('data-target')) {
                 e.preventDefault();
-                
+
                 const targetId = this.getAttribute('data-target');
                 const targetCategory = document.getElementById(targetId);
-                
+
                 if (targetCategory) {
                     // Get header height for proper offset
                     const headerHeight = getHeaderHeight();
                     // Calculate position with proper offset for mobile
                     const elementPosition = targetCategory.getBoundingClientRect().top;
                     const offsetPosition = elementPosition + window.pageYOffset - headerHeight - 20;
-                    
+
                     window.scrollTo({
                         top: offsetPosition,
                         behavior: 'smooth'
@@ -536,24 +536,24 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
+
     // Update active navigation based on scroll position
     function updateActiveNav() {
         let current = '';
         const headerHeight = getHeaderHeight();
         const scrollPosition = window.scrollY + headerHeight + 50; // Adjusted for mobile
-        
+
         categories.forEach(category => {
             const categoryTop = category.offsetTop;
             const categoryHeight = category.offsetHeight;
             const categoryBottom = categoryTop + categoryHeight;
-            
+
             // Check if category is in viewport with threshold
             if (scrollPosition >= categoryTop - 100 && scrollPosition < categoryBottom - 100) {
                 current = category.getAttribute('id');
             }
         });
-        
+
         // If no category found, find the closest one
         if (!current) {
             let closestDistance = Infinity;
@@ -566,7 +566,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         }
-        
+
         navLinks.forEach(link => {
             link.classList.remove('menu-nav-active');
             if (link.getAttribute('data-target') === current) {
@@ -574,12 +574,12 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    
+
     // Update on resize for mobile orientation changes
     window.addEventListener('resize', function() {
         updateActiveNav();
     });
-    
+
     // Initial call
     updateActiveNav();
 });
@@ -592,7 +592,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const minusBtns = document.querySelectorAll('.cart-table .minus-btn');
     const plusBtns = document.querySelectorAll('.cart-table .plus-btn');
     const qtyInputs = document.querySelectorAll('.cart-table .qty-input');
-    
+
     // Minus button click
     minusBtns.forEach(btn => {
         btn.addEventListener('click', function() {
@@ -602,7 +602,7 @@ document.addEventListener('DOMContentLoaded', function() {
             input.value = newValue;
         });
     });
-    
+
     // Plus button click
     plusBtns.forEach(btn => {
         btn.addEventListener('click', function() {
@@ -611,7 +611,7 @@ document.addEventListener('DOMContentLoaded', function() {
             input.value = currentValue + 1;
         });
     });
-    
+
     // Input change
     qtyInputs.forEach(input => {
         input.addEventListener('change', function() {
@@ -624,7 +624,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 //___________________________________
-//__________ Modal - Payment 
+//__________ Modal - Payment
 //___________________________________
 document.addEventListener('DOMContentLoaded', function() {
     // Modal show/hide functionality
@@ -632,7 +632,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const proceedBtn = document.querySelector('.proceed-btn');
     const closeBtn = document.querySelector('.close-btn');
     const modalOverlay = document.querySelector('.modal-overlay');
-    
+
     // Proceed button click - Modal Show
     if (proceedBtn) {
         proceedBtn.addEventListener('click', function() {
@@ -644,7 +644,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    
+
     // Close button click - Modal Hide
     if (closeBtn) {
         closeBtn.addEventListener('click', function() {
@@ -655,7 +655,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    
+
     // Overlay click - Modal Hide
     if (modalOverlay) {
         modalOverlay.addEventListener('click', function() {
@@ -666,7 +666,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    
+
     // Escape key press - Modal Hide
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') {
@@ -682,7 +682,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const paymentMethods = document.querySelectorAll('input[name="payment-method"]');
     const cashMessage = document.querySelector('.cash-message');
     const onlineOptions = document.querySelector('.online-options');
-    
+
     paymentMethods.forEach(method => {
         method.addEventListener('change', function() {
             if (this.value === 'cash') {
@@ -694,12 +694,12 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
+
     // Initialize with cash selected
     if (cashMessage) {
         cashMessage.classList.add('active');
     }
-    
+
     // Confirm Payment Button
     const confirmBtn = document.querySelector('.confirm-payment');
     if (confirmBtn) {
@@ -723,7 +723,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //___________________________________
-//__________ Password 
+//__________ Password
 //___________________________________
 document.addEventListener('click', function(e) {
     if (e.target.closest('.show-pass')) {
@@ -731,7 +731,7 @@ document.addEventListener('click', function(e) {
         const button = e.target.closest('.show-pass');
         const input = button.closest('.password-input-wrapper').querySelector('input');
         const icon = button.querySelector('i');
-        
+
         if (input.type === 'password') {
             input.type = 'text';
             icon.classList.replace('fa-eye-slash', 'fa-eye');
@@ -744,11 +744,11 @@ document.addEventListener('click', function(e) {
 
 
 //___________________________________
-//__________ OTP  
+//__________ OTP
 //___________________________________
 document.addEventListener('DOMContentLoaded', function() {
     const otpInputs = document.querySelectorAll('.otp-input');
-    
+
     otpInputs.forEach((input, index) => {
         // Handle input
         input.addEventListener('input', function(e) {
@@ -758,14 +758,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         });
-        
+
         // Handle backspace
         input.addEventListener('keydown', function(e) {
             if (e.key === 'Backspace' && this.value === '' && index > 0) {
                 otpInputs[index - 1].focus();
             }
         });
-        
+
         // Handle paste
         input.addEventListener('paste', function(e) {
             e.preventDefault();
@@ -782,7 +782,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 //___________________________________
-//__________ CANVAS 
+//__________ CANVAS
 //___________________________________
 class CanvasManager {
     constructor() {
@@ -791,52 +791,52 @@ class CanvasManager {
         this.navItems = document.querySelectorAll('.canvas-nav-item');
         this.tabs = document.querySelectorAll('.canvas-tab');
         this.closeBtn = document.querySelector('.canvas-close');
-        
+
         this.init();
     }
-    
+
     init() {
         // Add event listeners
         this.closeBtn.addEventListener('click', () => this.close());
         this.backdrop.addEventListener('click', () => this.close());
-        
+
         // Navigation click handlers
         this.navItems.forEach(item => {
             item.addEventListener('click', () => this.switchTab(item));
         });
-        
+
         // Add click handler for all buttons with data-target="userCanvas"
         document.querySelectorAll('[data-target="userCanvas"]').forEach(btn => {
             btn.addEventListener('click', () => this.open());
         });
     }
-    
+
     open() {
         this.canvas.classList.add('active');
         this.backdrop.classList.add('active');
         document.body.style.overflow = 'hidden';
     }
-    
+
     close() {
         this.canvas.classList.remove('active');
         this.backdrop.classList.remove('active');
         document.body.style.overflow = '';
     }
-    
+
     switchTab(clickedItem) {
         // Remove active class from all nav items
         this.navItems.forEach(item => {
             item.classList.remove('canvas-active-nav');
         });
-        
+
         // Add active class to clicked item
         clickedItem.classList.add('canvas-active-nav');
-        
+
         // Hide all tabs
         this.tabs.forEach(tab => {
             tab.classList.remove('active');
         });
-        
+
         // Show target tab
         const target = clickedItem.getAttribute('data-tab');
         const targetTab = document.getElementById(target);

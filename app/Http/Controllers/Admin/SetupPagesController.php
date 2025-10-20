@@ -21,27 +21,32 @@ class SetupPagesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
-        $page_title = "Setup Pages";
+        $page_title = __("Setup Pages");
         $setup_pages = SetupPage::get();
         return view('admin.sections.setup-pages.index',compact(
             'page_title',
             'setup_pages',
         ));
     }
+
     /**
      * Method for view the setup page details page
      * @return view
      */
+
     public function details($slug){
         $page_title         = "Setup Page Details";
         $setup_page         = SetupPage::with('sections.section')->where('slug',$slug)->first();
+
         if(!$setup_page) return back()->with(['error' => ['Sorry ! Page not found.']]);
+
+        $excludedKeys = array_map('strtolower', array_map('trim', SiteSectionConst::notDisplaySections()));
 
         if ($setup_page && $setup_page->sections->isNotEmpty()) {
             $ordered_sections = collect();
-
 
             foreach ($setup_page->sections as $assigned) {
                 if ($assigned->section) {
@@ -49,14 +54,18 @@ class SetupPagesController extends Controller
                 }
             }
 
-            $existing_keys = $ordered_sections->pluck('key')->toArray();
+            $existing_keys = $ordered_sections->pluck('key')->map(fn($k) => strtolower(trim($k)))->toArray();
+
             $remaining_sections = SiteSections::whereNotIn('key', $existing_keys)
-                ->where('key', '!=', SiteSectionConst::SITE_COOKIE)
+                ->whereNotIn('key', $excludedKeys)
                 ->get();
 
-            $site_sections = $ordered_sections->merge($remaining_sections);
+            $site_sections = $ordered_sections
+                ->reject(fn($section) => in_array(strtolower(trim($section->key)), $excludedKeys))
+                ->merge($remaining_sections);
+
         } else {
-            $site_sections = SiteSections::where('key', '!=', SiteSectionConst::SITE_COOKIE)->get();
+            $site_sections = SiteSections::whereNotIn('key', $excludedKeys)->get();
         }
 
         return view('admin.sections.setup-pages.details',compact(
@@ -65,6 +74,7 @@ class SetupPagesController extends Controller
             'site_sections'
         ));
     }
+
     /**
      * Method for store section information
      * @param Illuminate\Http\Request $request $slug

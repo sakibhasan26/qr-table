@@ -1,7 +1,7 @@
 @php
     $section_slug = Illuminate\Support\Str::slug(App\Constants\SiteSectionConst::GALLERY_SECTION);
     $gallery = App\Models\Admin\SiteSections::getData($section_slug)->first();
-    $tagline = preg_replace('/\[(.*?)\]/', '<span class="color--base">$1</span>', e(@$gallery?->value?->language?->$Select_lang->section_title ?? @$gallery?->value?->language?->$default_lang->section_title ?? ''));
+    $tagline = preg_replace('/\[(.*?)\]/', '<span class="color--base">$1</span>', e(@$gallery?->value?->language?->$select_lang->section_title ?? @$gallery?->value?->language?->$default_lang->section_title ?? ''));
 @endphp
 
 <section class="gallery-section ptb-80 ">
@@ -23,7 +23,7 @@
                         <div class="image-container">
                             <img src="{{ get_image(@$item->image ?? '',"site-section") }}"
                                 class="img-fluid" alt="Coleslaw Salad" loading="lazy">
-                            <div class="dish-name">{{ $item?->language?->$Select_lang->title ?? @$item?->language?->$default_lang->title }}</div>
+                            <div class="dish-name">{{ $item?->language?->$select_lang->title ?? @$item?->language?->$default_lang->title }}</div>
                         </div>
                     </div>
                 </div>

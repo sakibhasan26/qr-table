@@ -1,7 +1,7 @@
 @php
     $section_slug = Illuminate\Support\Str::slug(App\Constants\SiteSectionConst::DOWNLOAD_SECTION);
     $download = App\Models\Admin\SiteSections::getData($section_slug)->first();
-    $tagline = preg_replace('/\[(.*?)\]/', '<span class="color--base">$1</span>', e(@$download?->value?->language?->$Select_lang->title ?? @$download?->value?->language?->$default_lang->title ?? ''));
+    $tagline = preg_replace('/\[(.*?)\]/', '<span class="color--base">$1</span>', e(@$download?->value?->language?->$select_lang->title ?? @$download?->value?->language?->$default_lang->title ?? ''));
 @endphp
 <section class="app-available-section">
     <div class="container">
@@ -13,7 +13,7 @@
                         {!! $tagline !!}
                     </h3>
                     <p class="app-available-description">
-                        {{ @$download?->value?->language?->$Select_lang->heading ?? @$download?->value?->language?->$default_lang->heading }}
+                        {{ @$download?->value?->language?->$select_lang->heading ?? @$download?->value?->language?->$default_lang->heading }}
                     </p>
 
                     <div class="app-download-links">

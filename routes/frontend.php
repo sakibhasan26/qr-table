@@ -7,7 +7,8 @@ Route::name('frontend.')->group(function() {
     Route::controller(IndexController::class)->group(function() {
         Route::get('/','index')->name('index');
         Route::get('contact','contact')->name('contact');
-        Route::get('menu','menu')->name('menu');
+        Route::get('menu/{dish_slug?}','menu')->name('menu');
+        Route::get('search','search')->name('search');
         Route::get('reservation','reservation')->name('reservation');
         Route::post("subscribe","subscribe")->name("subscribe");
         Route::post("contact/message/send","contactMessageSend")->name("contact.message.send");
