@@ -1,11 +1,19 @@
 @extends('layouts.master')
 
 @push('css')
-    
+
 @endpush
 
+@php
+    $select_lang = selectedLang();
+    $default_lang = system_default_lang();
+    $section_slug = Illuminate\Support\Str::slug(App\Constants\SiteSectionConst::REGISTER_SECTION);
+    $register = App\Models\Admin\SiteSections::getData($section_slug)->first();
+@endphp
+
+
 @section('content')
-    <section class="account-section bg_img" data-background="{{ asset("public/frontend/images/element/account.png") }}">
+    {{-- <section class="account-section bg_img" data-background="{{ asset("public/frontend/images/element/account.png") }}">
         <div class="right float-end">
             <div class="account-header text-center">
                 <a class="site-logo" href="{{ route('frontend.index') }}"><img src="{{ get_logo($basic_settings) }}" alt="logo"></a>
@@ -92,7 +100,92 @@
                 <p>{{ __("Copyright") }} © {{ date("Y",time()) }} {{ __("All Rights Reserved.") }}</a></p>
             </div>
         </div>
-    </section>
+    </section> --}}
+
+
+<div class="user-page-wrapper">
+    <div class="container">
+        <div class="signup-page-wrapper">
+            <div class="row align-items-center">
+                <!-- Image Section -->
+                <div class="col-lg-6">
+                    <div class="user-page-image">
+                        <div class="image-overlay"></div>
+                        <img src="{{ get_image(@$register?->value?->image ?? '',"site-section") }}" alt="Sign Up" class="img-fluid">
+                        <div class="image-content">
+                            <div class="logo-container">
+                                <a href="{{ url('/') }}">
+                                    <img src="{{ get_logo($basic_settings) }}" data-white_img="{{ get_logo($basic_settings,'white') }}" data-dark_img="{{ get_logo($basic_settings,'dark') }}" alt="site-logo">
+                                </a>
+                            </div>
+                            <h2>{{ @$register?->value?->language?->$select_lang->heading ?? $register?->value?->language?->$default_lang->heading }}</h2>
+                            <p>{{ @$register?->value?->language?->$select_lang->sub_heading ?? $register?->value?->language?->$default_lang->sub_heading }}</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Form Section -->
+                <div class="col-lg-6">
+                    <div class="user-page-form">
+                        <div class="form-container">
+                            <h3 class="form-title">{{ @$register?->value?->language?->$select_lang->form_text ?? $register?->value?->language?->$default_lang->form_text }}</h3>
+                            <form {{ setRoute('user.register.submit') }} class="auth-form" method="POST">
+                                @csrf
+                                <div class="form-group">
+                                    <label for="signup-email">{{ __('Email Address') }} <span>*</span></label>
+                                    <input name="email" type="email" id="signup-email" placeholder="Enter your email address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="signup-password">{{ __('Password') }} <span>*</span></label>
+                                    <div class="password-input-wrapper">
+                                        <input name="password" type="password" id="signup-password" placeholder="Create your password">
+                                        <div class="show_hide_password">
+                                            <a href="#" class="show-pass">
+                                                <i class="fas fa-eye-slash"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn--base w-100">{{ __('Create Account') }}</button>
+                                </div>
+                                <!-- Continue with Google Section -->
+                                <div class="social-login-section">
+                                    <div class="divider">
+                                        <span>{{ __('Or continue with') }}</span>
+                                    </div>
+                                    <div class="social-buttons">
+                                        <button type="button" class="social-btn google-btn">
+                                            <img src="{{ asset('public/frontend') }}/images/user-images/google-icon.png" alt="Google">
+                                            <span>{{ __('Continue with Google') }}</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-links">
+                                    <p>{{ __('Already have an account?') }} <a href="login.html" class="login-link">{{ __('Sign In') }}</a></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Animated Icons -->
+    <div class="floating-icons">
+        <span class="icon"><i class="fas fa-pizza-slice"></i></span>
+        <span class="icon"><i class="fas fa-hamburger"></i></span>
+        <span class="icon"><i class="fas fa-ice-cream"></i></span>
+        <span class="icon"><i class="fas fa-coffee"></i></span>
+        <span class="icon"><i class="fas fa-cookie"></i></span>
+        <span class="icon"><i class="fas fa-apple-alt"></i></span>
+        <span class="icon"><i class="fas fa-lemon"></i></span>
+        <span class="icon"><i class="fas fa-cheese"></i></span>
+    </div>
+</div>
+
+
+
+
 @endsection
 
 @push('script')

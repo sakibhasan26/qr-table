@@ -28,19 +28,20 @@
             </p>
           </div>
 
-          <!-- Search Form -->
-          <div class="search-form">
-            <div class="input-group">
-                <form action="{{ route('frontend.search') }}" method="GET">
-                    @csrf
-                    <input type="text" class="form-control" placeholder="{{ @$discover?->value?->language?->$select_lang->search_placeholder ?? $discover?->value?->language?->$default_lang->search_placeholder }}">
-                      <button class="btn btn-search" type="button">
-                        <i class="{{ @$discover?->value?->language?->$select_lang->search_icon ?? $discover?->value?->language?->$default_lang->search_icon }}"></i>
-                      </button>
-                </form>
-
+            <!-- Search Form -->
+            <div class="search-form">
+                <div class="input-group">
+                    <form action="{{ route('frontend.search') }}" method="GET" class="w-100">
+                        <div class="input-group">
+                            <input type="text" name="search" class="form-control" placeholder="{{ @$discover?->value?->language?->$select_lang->search_placeholder ?? $discover?->value?->language?->$default_lang->search_placeholder }}">
+                                <button class="btn btn-search" type="submit">
+                                <i class="{{ @$discover?->value?->language?->$select_lang->search_icon ?? $discover?->value?->language?->$default_lang->search_icon }}"></i>
+                                </button>
+                        </div>
+                    </form>
+                </div>
             </div>
-          </div>
+
 
           <!-- Search Tags -->
           <div class="search-tags">

@@ -38,22 +38,30 @@ class RouteServiceProvider extends ServiceProvider
                 ->group(base_path('routes/api.php'));
             Route::middleware('web')
                 ->group(base_path('routes/web.php'));
+
             Route::middleware(['web','auth','verification.guard'])
                 ->group(base_path('routes/user.php'));
+
             Route::prefix($basic_settings->admin_prefix ?? 'admin')
                 ->group(base_path('routes/admin.php'));
-            Route::middleware('web')
+
+            Route::middleware(['web'])
                 ->group(base_path('routes/auth.php'));
+
             Route::middleware('web')
                 ->group(base_path('routes/global.php'));
+
             Route::middleware('web') // declare frontend routes
                 ->group(base_path('routes/frontend.php'));
+
             Route::middleware(['api','auth:api']) // User API Routes (v1)
                 ->prefix('api/v1')
                 ->group(base_path('routes/api/v1/user.php'));
+
             Route::middleware('api') // Auth API Routes - User/Merchant/Agent (v1)
                 ->prefix('api/v1')
                 ->group(base_path('routes/api/v1/auth.php'));
+
             Route::middleware(['api']) // User API Routes (v1)
                 ->prefix('api/v1')
                 ->group(base_path('routes/api/v1/global.php'));

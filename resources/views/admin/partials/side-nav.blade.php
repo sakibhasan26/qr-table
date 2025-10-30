@@ -307,6 +307,7 @@
                             setRoute('admin.setup.sections.section','register-section'),
                             setRoute('admin.setup.sections.section','forget-password-section'),
                             setRoute('admin.setup.sections.section','reset-password-section'),
+                            setRoute('admin.setup.sections.section','otp-section'),
                         ];
                     @endphp
 
@@ -400,6 +401,10 @@
                                 <a href="{{ setRoute('admin.setup.sections.section','reset-password-section') }}" class="nav-link @if ($current_url == setRoute('admin.setup.sections.section','reset-password-section')) active @endif">
                                     <i class="menu-icon las la-ellipsis-h"></i>
                                     <span class="menu-title"> {{ __("Reset Password Section") }} </span>
+                                </a>
+                                <a href="{{ setRoute('admin.setup.sections.section','otp-section') }}" class="nav-link @if ($current_url == setRoute('admin.setup.sections.section','otp-section')) active @endif">
+                                    <i class="menu-icon las la-ellipsis-h"></i>
+                                    <span class="menu-title"> {{ __("OTP Section") }} </span>
                                 </a>
                             </li>
                         </ul>

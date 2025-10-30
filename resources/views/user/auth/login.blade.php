@@ -2,11 +2,19 @@
 @extends('layouts.master')
 
 @push('css')
-    
+
 @endpush
 
+@php
+    $select_lang = selectedLang();
+    $default_lang = system_default_lang();
+    $section_slug = Illuminate\Support\Str::slug(App\Constants\SiteSectionConst::LOGIN_SECTION);
+    $login = App\Models\Admin\SiteSections::getData($section_slug)->first();
+@endphp
+
+
 @section('content')
-    <section class="account-section bg_img" data-background="{{ asset('public/frontend/images/element/account.png') }}">
+    {{-- <section class="account-section bg_img" data-background="{{ asset('public/frontend/images/element/account.png') }}">
         <div class="right float-end">
             <div class="account-header text-center">
                 <a class="site-logo" href="{{ setroute('frontend.index') }}"><img src="{{ asset('public/frontend/images/logo/logo.png') }}" alt="logo"></a>
@@ -65,9 +73,79 @@
                 <p>{{ __("Copyright") }} © {{ date("Y",time()) }} {{ __("All Rights Reserved.") }}</a></p>
             </div>
         </div>
-    </section>
+    </section> --}}
+
+
+<!-- Login Page -->
+<div class="user-page-wrapper">
+    <div class="container">
+        <div class="login-page-wrapper">
+            <div class="row align-items-center">
+                <!-- Image Section -->
+                <div class="col-lg-6">
+                    <div class="user-page-image">
+                        <div class="image-overlay"></div>
+                        <img src="{{ get_image(@$login?->value?->image ?? '',"site-section") }}" alt="Login" class="img-fluid">
+                        <div class="image-content">
+                            <div class="logo-container">
+                                <a href="index.html">
+                                    <img src="{{ get_logo($basic_settings) }}" data-white_img="{{ get_logo($basic_settings,'white') }}" data-dark_img="{{ get_logo($basic_settings,'dark') }}" alt="site-logo">
+                                </a>
+                            </div>
+                            <h2>{{ @$login?->value?->language?->$select_lang->heading ?? $login?->value?->language?->$default_lang->heading }}</h2>
+                            <p>{{ @$login?->value?->language?->$select_lang->sub_heading ?? $login?->value?->language?->$default_lang->sub_heading }}</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Form Section -->
+                <div class="col-lg-6">
+                    <div class="user-page-form">
+                        <div class="form-container">
+                            <h3 class="form-title">{{ @$login?->value?->language?->$select_lang->form_text ?? $login?->value?->language?->$default_lang->form_text }}</h3>
+                            <form action="{{ setRoute('user.login.submit') }}" method="POST" class="auth-form">
+                                <div class="form-group">
+                                    <label for="login-email">{{ __('Email') }} <span>*</span></label>
+                                    <input type="text" id="login-email" placeholder="{{ __('Enter your email') }}">
+                                </div>
+                                <div class="form-group">
+                                    <label for="login-password">{{ __('Password') }} <span>*</span></label>
+                                    <div class="password-input-wrapper">
+                                        <input type="password" id="login-password" placeholder="{{ __('Enter your password') }}">
+                                        <div class="show_hide_password">
+                                            <a href="#" class="show-pass">
+                                                <i class="fas fa-eye-slash"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn--base w-100">{{ __('Sign In') }}</button>
+                                </div>
+                                <div class="form-links">
+                                    <a href="forget-password.html" class="forgot-pass">{{ __('Forgot Password?') }}</a>
+                                    <p>{{ __("Don't have an account?") }} <a href="{{ setRoute('user.register') }}" class="signup-link">{{ __('Sign Up') }}</a></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Animated Icons -->
+    <div class="floating-icons">
+        <span class="icon"><i class="fas fa-pizza-slice"></i></span>
+        <span class="icon"><i class="fas fa-hamburger"></i></span>
+        <span class="icon"><i class="fas fa-ice-cream"></i></span>
+        <span class="icon"><i class="fas fa-coffee"></i></span>
+        <span class="icon"><i class="fas fa-cookie"></i></span>
+        <span class="icon"><i class="fas fa-apple-alt"></i></span>
+        <span class="icon"><i class="fas fa-lemon"></i></span>
+        <span class="icon"><i class="fas fa-cheese"></i></span>
+    </div>
+</div>
 @endsection
 
 @push('script')
-    
+
 @endpush

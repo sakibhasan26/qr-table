@@ -12,12 +12,14 @@ use App\Models\Admin\SiteSections;
 use App\Models\Frontend\Subscribe;
 use App\Constants\SiteSectionConst;
 use App\Http\Controllers\Controller;
+use App\Models\Admin\Dishes;
 use App\Models\Admin\InvestmentPlan;
 use App\Models\Frontend\Announcement;
 use App\Models\Frontend\ContactRequest;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 use App\Providers\Admin\BasicSettingsProvider;
+use Illuminate\Support\Facades\DB;
 
 class IndexController extends Controller
 {
@@ -72,10 +74,37 @@ class IndexController extends Controller
 
     public function search(Request $request) {
 
-        // dd($request->all(),Request::all());
+        $validator = Validator::make($request->all(),[
+            'search'    => "required|string|max:255",
+        ]);
+
+        if($validator->fails()) {
+            return back()->withErrors($validator)->withInput();
+        }
+        $validated = $validator->validate();
+
+        $query = Dishes::query()->where('status', true);
+
+
+        // language-wise dish search
+        if ($request->filled('search')) {
+            $search = '%' . $request->search . '%';
+            $lang   = system_default_lang(); // example: 'en'
+
+            $query->whereRaw("
+                JSON_SEARCH(
+                    JSON_EXTRACT(data, '$.language.$lang'),
+                    'one',
+                    ?
+                ) IS NOT NULL
+            ", [$search]);
+        }
+
+        $dishes = $query->get();
+
         $page_title         = __("Search Page");
 
-        return view('frontend.pages.search',compact('page_title'));
+        return view('frontend.pages.search',compact('page_title','dishes'));
     }
 
 

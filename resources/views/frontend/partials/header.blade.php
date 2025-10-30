@@ -43,7 +43,7 @@
                                 </li>
                             </ul>
                             <div class="header-action">
-                                <a href="login.html" class="btn--base">Login</a>
+                                <a href="{{ setRoute('user.login') }}" class="btn--base">{{ __('Login') }}</a>
                             </div>
                         </div>
                     </nav>

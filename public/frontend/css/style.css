@@ -2,8 +2,8 @@
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Typography 
-    [ ## Heading ] 
+# Typography
+    [ ## Heading ]
     [ ## Others Typography ]
 # Elements
     [ ## Font Size ]
@@ -4256,9 +4256,8 @@ textarea.form--control {
   -webkit-mask-image: linear-gradient(to right, transparent 0%, black 100px, black calc(100% - 100px), transparent 100%);
           mask-image: linear-gradient(to right, transparent 0%, black 100px, black calc(100% - 100px), transparent 100%);
 }
-
 .search-section {
-  background-color: #fff0eb;
+  background-color: #FFF0EB;
   overflow-x: hidden;
 }
 .search-section .search-content {
@@ -4306,11 +4305,11 @@ textarea.form--control {
 }
 .search-section .search-content .search-form .input-group .form-control:focus {
   outline: none;
-  border-color: #f35005;
+  border-color: #F35005;
 }
 .search-section .search-content .search-form .input-group .btn-search {
-  background: #f35005;
-  color: #ffffff;
+  background: #F35005;
+  color: #FFFFFF;
   border: none;
   padding: 0 1.5rem;
   font-size: 1.2rem;
@@ -4318,7 +4317,7 @@ textarea.form--control {
   transition: all 0.3s ease;
 }
 .search-section .search-content .search-form .input-group .btn-search:hover {
-  background: #c14004;
+  background: #C14004;
 }
 .search-section .search-content .search-tags h4 {
   font-family: "Oxanium", sans-serif;
@@ -4338,9 +4337,9 @@ textarea.form--control {
 .search-section .search-content .search-tags .tags-container .tag {
   display: inline-block;
   padding: 0.5rem 1.2rem;
-  background: #ffffff;
+  background: #FFFFFF;
   color: #222222;
-  border: 1px solid #dddddd;
+  border: 1px solid #DDDDDD;
   border-radius: 50px;
   font-family: "Lato", sans-serif;
   font-size: 0.9rem;
@@ -4351,9 +4350,9 @@ textarea.form--control {
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 .search-section .search-content .search-tags .tags-container .tag:hover {
-  background: #f35005;
-  color: #ffffff;
-  border-color: #f35005;
+  background: #F35005;
+  color: #FFFFFF;
+  border-color: #F35005;
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
   -webkit-box-shadow: 0 5px 15px rgba(243, 80, 5, 0.3);
@@ -4366,8 +4365,8 @@ textarea.form--control {
   background: transparent !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
-  border-right: 10px solid #f35005;
-  border-bottom: 10px solid #f35005;
+  border-right: 10px solid #F35005;
+  border-bottom: 10px solid #F35005;
 }
 .search-section .search-image-robo img {
   width: 100%;
@@ -4381,7 +4380,6 @@ textarea.form--control {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
 }
-
 @media (max-width: 768px) {
   .search-section .section-header .section-subtitle {
     text-align: center;

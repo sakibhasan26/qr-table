@@ -1,15 +1,12 @@
 <?php
 
-use App\Http\Controllers\Admin\Auth\LoginController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Admin\Auth\ForgotPasswordController;
-use App\Http\Controllers\Admin\Auth\ResetPasswordController;
 use App\Http\Controllers\User\Auth\ForgotPasswordController as UserForgotPasswordController;
 use App\Http\Controllers\User\Auth\LoginController as UserLoginController;
 use App\Http\Controllers\User\Auth\RegisterController as UserRegisterController;
 use App\Http\Controllers\User\Auth\SocialAuthentication;
 use App\Http\Controllers\User\AuthorizationController;
-use App\Http\Controllers\Admin\AuthorizationController as AdminAuthorizationController;
+// use App\Http\Controllers\Admin\AuthorizationController as AdminAuthorizationController;
 
 
 Route::name('user.')->group(function(){

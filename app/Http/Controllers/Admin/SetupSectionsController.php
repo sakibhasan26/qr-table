@@ -49,6 +49,10 @@ class SetupSectionsController extends Controller
                 'view'      => "forgetPasswordView",
                 'update'    => "forgetPasswordUpdate",
             ],
+            'otp-section'    => [
+                'view'      => "otpSectionView",
+                'update'    => "otpSectionUpdate",
+            ],
             'banner'    => [
                 'view'      => "bannerView",
                 'update'    => "bannerUpdate",
@@ -351,6 +355,52 @@ class SetupSectionsController extends Controller
         return back()->with(['success' => [__('Section Updated Successfully!')]]);
     }
     //========================FORGET PASSWORD  Section End============================
+
+
+    //======================== OTP SECTION  Section Start============================
+    public function otpSectionView($slug) {
+        $page_title = __("OTP Section");
+        $section_slug = Str::slug(SiteSectionConst::OTP_SECTION);
+        $data = SiteSections::getData($section_slug)->first();
+        $languages = $this->languages;
+
+        return view('admin.sections.setup-sections.otp-section',compact(
+            'page_title',
+            'data',
+            'languages',
+            'slug',
+        ));
+    }
+    public function otpSectionUpdate(Request $request,$slug) {
+
+        $basic_field_name = [
+            'heading' => "required|string|max:100",
+            'sub_heading' => "required|string",
+            'form_text' => "required|string",
+        ];
+
+        $slug = Str::slug(SiteSectionConst::OTP_SECTION);
+        $section = SiteSections::where("key",$slug)->first();
+
+        $data['image'] = $section->value->image ?? "";
+        if($request->hasFile("image")) {
+            $data['image']      = $this->imageValidate($request,"image",$section->value->image ?? null);
+        }
+
+        $data['language']  = $this->contentValidate($request,$basic_field_name);
+
+        $update_data['key']    = $slug;
+        $update_data['value']  = $data;
+
+        try{
+            SiteSections::updateOrCreate(['key' => $slug],$update_data);
+        }catch(Exception $e) {
+            return back()->with(['error' => [__('Something went wrong! Please try again')]]);
+        }
+
+        return back()->with(['success' => [__('Section Updated Successfully!')]]);
+    }
+    //========================OTP  Section End============================
 
     //========================RESET PASSWORD SECTION  Section Start============================
     public function resetPasswordView($slug) {

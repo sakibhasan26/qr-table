@@ -25,6 +25,7 @@ class SiteSectionConst{
     const FOOTER_SECTION            = "Footer Section";
     const ABOUT_PAGE_SECTION        = "About Page Section";
     const CONTACT_US_SECTION        = "Contact Us Section";
+    const OTP_SECTION               = "Otp Section";
 
 
 
@@ -36,6 +37,7 @@ class SiteSectionConst{
     const NOT_DISPLAY_FORGET_PASSWORD_SECTION = "forget-password-section";
     const NOT_DISPLAY_RESET_PASSWORD_SECTION  = "reset-password-section";
     const NOT_DISPLAY_ABOUT_SECTION           = "about-section";
+    const NOT_DISPLAY_OTP_SECTION          = "otp-section";
 
     public static function notDisplaySections(): array{
         return [
@@ -47,6 +49,7 @@ class SiteSectionConst{
             self::NOT_DISPLAY_FORGET_PASSWORD_SECTION,
             self::NOT_DISPLAY_RESET_PASSWORD_SECTION,
             self::NOT_DISPLAY_ABOUT_SECTION,
+            self::NOT_DISPLAY_OTP_SECTION,
         ];
     }
 }

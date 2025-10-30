@@ -2,17 +2,18 @@
 
 namespace App\Http\Controllers\User\Auth;
 
-use App\Http\Controllers\Controller;
-use App\Providers\Admin\BasicSettingsProvider;
+use Exception;
+use App\Models\User;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
-use Illuminate\Foundation\Auth\RegistersUsers;
+use App\Http\Controllers\Controller;
+use App\Traits\User\RegisteredUsers;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rules\Password;
-use Illuminate\Auth\Events\Registered;
-use App\Models\User;
-use App\Traits\User\RegisteredUsers;
-use Exception;
-use Illuminate\Support\Facades\Hash;
+use App\Providers\Admin\BasicSettingsProvider;
+use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller
 {
@@ -65,10 +66,10 @@ class RegisterController extends Controller
         $basic_settings             = $this->basic_settings;
 
         $validated['email_verified']    = ($basic_settings->email_verification == true) ? false : true;
-        $validated['sms_verified']      = ($basic_settings->sms_verification == true) ? false : true;
-        $validated['kyc_verified']      = ($basic_settings->kyc_verification == true) ? false : true;
+        // $validated['sms_verified']      = ($basic_settings->sms_verification == true) ? false : true;
+        // $validated['kyc_verified']      = ($basic_settings->kyc_verification == true) ? false : true;
         $validated['password']          = Hash::make($validated['password']);
-        $validated['username']          = make_username($validated['firstname'],$validated['lastname']);
+        // $validated['username']          = make_username(Str::slug($validated['firstname']),Str::slug($validated['lastname']));
 
         event(new Registered($user = $this->create($validated)));
         $this->guard()->login($user);
@@ -84,7 +85,6 @@ class RegisterController extends Controller
      * @return \Illuminate\Contracts\Validation\Validator
      */
     public function validator(array $data) {
-
         $basic_settings = $this->basic_settings;
         $password_rule = "required|string|min:6";
         if($basic_settings->secure_password) {
@@ -92,8 +92,8 @@ class RegisterController extends Controller
         }
 
         return Validator::make($data,[
-            'firstname'     => 'required|string|max:60',
-            'lastname'      => 'required|string|max:60',
+            // 'firstname'     => 'required|string|max:60',
+            // 'lastname'      => 'required|string|max:60',
             'email'         => 'required|string|email|max:150|unique:users,email',
             'password'      => $password_rule,
             'refer'         => 'sometimes|nullable|string|exists:users,referral_id',
@@ -123,7 +123,7 @@ class RegisterController extends Controller
     protected function registered(Request $request, $user)
     {
         try{
-            $this->createUserWallets($user);
+            // $this->createUserWallets($user);
         }catch(Exception $e) {
             $this->guard()->logout();
             $user->delete();

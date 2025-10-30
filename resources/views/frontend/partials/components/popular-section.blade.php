@@ -34,7 +34,7 @@
               <div class="dish-card {{ $item->qty <= 0 ? 'sold-out' : '' }}">
                   <div class="dish-card-image">
                       <img src="{{ get_image(@$item->image ?? '',"dishes") }}" alt="Margherita Pizza">
-                      <div class="dish-card-badge badge-available">
+                      <div class="dish-card-badge {{ $item->qty <= 0 ? 'badge-sold-out' : 'badge-available' }}">
                         {{ $item->qty <= 0 ? __('Sold Out') : __('Available') }}
                       </div>
                   </div>
